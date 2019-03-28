@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Агафонов](https://up.htmlacademy.ru/adaptive/16/user/592167).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Шефер](https://htmlacademy.ru/profile/shefer).
 
 ---
 
