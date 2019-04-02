@@ -45,53 +45,53 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
-      <fieldset class="order__sort-type sort-type">
-        <legend class="sort-type__title">Тип</legend>
-        <ul class="sort-type__list">
-          <li class="sort-type__item">
+      <fieldset class="order-form">
+        <legend class="order-form__title">Тип</legend>
+        <ul class="order-form__list">
+          <li class="order-form__item">
             <input type="radio" id="sort-type-accessory" name="sort-type" value="accessory">
             <label for="sort-type-accessory">Аксессуар для интерьера</label>
           </li>
-          <li class="sort-type__item">
+          <li class="order-form__item">
             <input type="radio" id="sort-type-toy" name="sort-type" value="toy">
             <label for="sort-type-toy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="order__sort-color sort-color">
-        <legend class="sort-color__title">Цвет</legend>
-        <ul class="sort-color__list">
-          <li class="sort-color__item">
+      <fieldset class="order-form">
+        <legend class="order-form__title">Цвет</legend>
+        <ul class="order-form__list">
+          <li class="order-form__item">
             <input type="checkbox" name="color-white" id="sort-color-white">
             <label for="sort-color-white">Белый</label>
           </li>
-          <li class="sort-color__item">
+          <li class="order-form__item">
             <input type="checkbox" name="color-grey" id="sort-color-grey">
             <label for="sort-color-grey">Серый</label>
           </li>
-          <li class="sort-color__item">
+          <li class="order-form__item">
             <input type="checkbox" name="color-tiffany" id="sort-color-tiffany">
             <label for="sort-color-tiffany">«Тиффани»</label>
           </li>
-          <li class="sort-color__item">
+          <li class="order-form__item">
             <input type="checkbox" name="color-black" id="sort-color-black">
             <label for="sort-color-black">Черный</label>
           </li>
-          <li class="sort-color__item">
+          <li class="order-form__item">
             <input type="checkbox" name="color-pink" id="sort-color-pink">
             <label for="sort-color-pink">Розовый</label>
           </li>
-          <li class="sort-color__item">
+          <li class="order-form__item">
             <input type="checkbox" name="color-orange" id="sort-color-orange">
             <label for="sort-color-orange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="order__person person-info">
-        <div class="person-info__fio fio">
-          <h3 class="fio__title">фио</h3>
+      <fieldset class="order-form">
+        <div class="order-form__fio">
+          <h3 class="order-form__title">фио</h3>
           <label for="person-name">Имя:</label>
           <input type="text" name="name" id="person-name" placeholder="Введите ваше имя*">
           <label for="person-sname">Фамилия:</label>
@@ -99,19 +99,19 @@
           <label for="person-given-name">Отчество:</label>
           <input type="text" name="given-name" id="person-given-name" placeholder="Отчество, если желаете">
         </div>
-        <div class="person-info__phone phone">
-          <h3 class="phone__title">тел</h3>
+        <div class="order-form__phone">
+          <h3 class="order-form__title">тел</h3>
           <input type="text" name="phone" id="person-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </div>
-        <div class="person-info__email email">
-          <h3 class="email__title">e-mail</h3>
+        <div class="order-form__email">
+          <h3 class="order-form__title">e-mail</h3>
           <input type="text" name="email" id="person-email" placeholder="Ваш Email*">
         </div>
-        <div class="person-info__another another-info">
-          <h3 class="another-indo__title">доп</h3>
+        <div class="order-form__another">
+          <h3 class="order-form__title">доп</h3>
           <textarea name="another-info" id="person-another-info" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <p class="person-info__prompt">
+        <p class="order-form__prompt">
             *Поля обязательны для заполнения
         </p>
       </fieldset>
