@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+
+  <section class="page-logo">
+    <h2 class="page-logo__title">Mishka</h2>
+  </section>
+
+  <header class="page-header">
+    <ul class="page-header__list">
+      <li class="page-header__item">
+        <a>
+          Каталог товаров
+        </a>
+      </li>
+      <li class="page-header__item">
+        <a href="form.html">
+          Вязание на заказ
+        </a>
+      </li>
+      <li class="page-header__item">
+        <a href="#">
+          Поиск по сайту
+        </a>
+      </li>
+      <li class="page-header__item">
+        <a href="#">
+          Корзина: пока пуста
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <section class="main-header">
+      <h2 class="main-header__title">Каталог товаров</h2>
+    </section>
+    <section class="catalog">
+      <h2 class="catalog__title visually-hidden">Перечень товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item good">
+          <img class="catalog__picture" src="img/photo-1.jpg" alt="Зайчик-попрыгайчик">
+          <h3 class="good__title">Зайчик-попрыгайчик</h3>
+          <p class="good__description">
+            Рост 30 см, вес 200 г
+          </p>
+          <div class="good__price">
+            <p>1 200 руб.</p>
+            <span></span>
+          </div>
+        </li>
+        <li class="catalog__item good">
+          <img class="catalog__picture" src="img/photo-1.jpg" alt="Корзинка для белья">
+          <h3 class="good__title">Корзинка для белья</h3>
+          <p class="good__description">
+            Диаметр 15 см, высота 10 см
+          </p>
+          <div class="good__price">
+            <p>690 руб.</p>
+            <span></span>
+          </div>
+        </li>
+        <li class="catalog__item good">
+          <img class="catalog__picture" src="img/photo-1.jpg" alt="Большая корзинка для игрушек">
+          <h3 class="good__title">Большая корзинка для игрушек</h3>
+          <p class="good__description">
+            Диаметр 30 см, высота 30 см
+          </p>
+          <div class="good__price">
+            <p>1 500 руб.</p>
+            <span></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <video src="#"></video>
+      <p class="video__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a class="button" href="#">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <ul class="page-footer__social social">
+      <li>
+        <a class="social__item" href="#" aria-label="Мы в инстаграмме">
+          <img class="social__icon social__icon--insta" src="img/insta.svg" alt="Мы в инстаграмме" width="22"
+            height="21">
+        </a>
+      </li>
+      <li>
+        <a class="social__item" href="#" aria-label="Мы в фейсбуке">
+          <img class="social__icon social__icon--fb" src="img/fb.svg" alt="Мы в фейсбуке" width="15" height="28">
+        </a>
+      </li>
+      <li>
+        <a class="social__item" href="#" aria-label="Мы в твиттере">
+          <img class="social__icon social__icon--twitter" src="img/twitter.svg" alt="Мы в твиттере" width="23"
+            height="20">
+        </a>
+      </li>
+    </ul>
+    <p class="page-footer__copyright">
+      Разработано
+    </p>
+  </footer>
+
+  <section class="modal-basket">
+    <h2 class="modal-basket__title">Добавить в корзину</h2>
+    <p class="modal-basket__text">
+      Выберите размер:
+    </p>
+    <div class="modal-basket__size size">
+      <button class="size__button" type="button">s</button>
+      <button class="size__button" type="button">m</button>
+      <button class="size__button" type="button">l</button>
+    </div>
+    <button class="modal-basket__add" type="button">Добавить</button>
+  </section>
+
+</body>
+
+</html>
