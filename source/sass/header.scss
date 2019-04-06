@@ -1,0 +1,73 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.page-header {
+  @include block-center;
+  width: 320px;
+
+  &__list {
+    @include clear-list;
+  }
+
+
+  &__item {
+    position: relative;
+
+    width: 100%;
+
+    border-top: 1px solid $menu-border-color;
+  }
+
+  &__item:last-child {
+    border-bottom: 1px solid $menu-border-color;
+  }
+
+  &__item a {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 76px;
+
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+
+    color: $color-black
+  }
+
+  &__search svg {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    opacity: 0.2;
+  }
+
+  &__search svg:hover,
+  &__search svg:focus {
+    fill: $color-lime;
+    opacity: 1;
+  }
+
+  &__search svg:active {
+    opacity: 0.3;
+  }
+
+  &__basket svg {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    opacity: 0.2;
+  }
+
+  &__basket svg:hover,
+  &__basket svg:focus {
+    fill: $color-lime;
+    opacity: 1;
+  }
+
+  &__basket svg:active {
+    opacity: 0.3;
+  }
+}

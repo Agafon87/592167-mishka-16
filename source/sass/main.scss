@@ -1,7 +1,33 @@
 @import "partials/mixins";
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/opensans.woff);
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/opensans.woff2);
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/opensansbold.woff);
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/opensansbold.woff2);
+}
+
 body {
   @include clear;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 .visually-hidden {
@@ -16,4 +42,8 @@ body {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }
