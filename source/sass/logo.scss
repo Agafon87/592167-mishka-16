@@ -1,11 +1,12 @@
 @import "partials/mixins";
+@import "partials/params";
 
 .page-logo {
   position: relative;
   @include block-center;
   padding: 22px 0;
   padding-left: 116px;
-  width: 320px;
+  width: $width-mobile;
   box-sizing: border-box;
 
   &__title {

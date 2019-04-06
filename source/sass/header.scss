@@ -3,7 +3,7 @@
 
 .page-header {
   @include block-center;
-  width: 320px;
+  width: $width-mobile;
 
   &__list {
     @include clear-list;
