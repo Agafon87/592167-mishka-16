@@ -29,6 +29,8 @@
   &__item {
 
     & a {
+      position: relative;
+
       display: block;
       padding: 27px 29px 28px 29px;
 
@@ -46,8 +48,40 @@
       width: 45px;
     }
 
-    & .bg-lime-darker {
+    & .interior::after {
+      position: absolute;
+      top: 23px;
+      right: 36px;
+
+      width: 40px;
+      height: 62px;
+
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.5;
+
+      content: '';
+    }
+
+    & .child-toy {
       background-color: $color-lime-darker;
+    }
+
+    & .child-toy::after {
+      position: absolute;
+      top: 21px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.5;
+
+      content: '';
     }
   }
 }
