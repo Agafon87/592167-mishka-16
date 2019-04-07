@@ -1,0 +1,30 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.slider {
+
+  &__button-style {
+    display: flex;
+    margin-bottom: 38px;
+  }
+
+  &__button {
+    @include clear;
+    width: 130px;
+    height: 52px;
+
+    border: 1px solid $button-slider-color;
+    background-color: $color-white;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 48% 50%;
+    box-sizing: border-box;
+  }
+
+  &__next {
+    width: 129px;
+
+    background-image: url("../img/icon-right-arrow.svg");
+    border-left: none;
+  }
+}

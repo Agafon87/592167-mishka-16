@@ -1,0 +1,41 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.feedback {
+  padding: 0 30px;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-top: 24px;
+    margin-bottom: 27px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__author-name {
+    @include clear;
+    margin-bottom: 3px;
+
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__author-email {
+    @include clear;
+    margin-bottom: 29px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .button {
+    @include button;
+  }
+}
