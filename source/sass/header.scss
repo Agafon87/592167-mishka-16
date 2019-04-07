@@ -15,11 +15,11 @@
 
     width: 100%;
 
-    border-top: 1px solid $menu-border-color;
+    border-top: 1px solid $border-color;
   }
 
   &__item:last-child {
-    border-bottom: 1px solid $menu-border-color;
+    border-bottom: 1px solid $border-color;
   }
 
   &__item a {

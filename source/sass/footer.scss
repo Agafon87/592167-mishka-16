@@ -1,0 +1,36 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.page-footer {
+  width: $width-mobile;
+  @include block-center;
+
+  background-color: $footer-bg-color;
+
+  &__copyright {
+    position: relative;
+
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    border-top: 1px solid $footer-separator-color;
+  }
+
+  &__copyright p {
+    @include clear;
+    padding-top: 28px;
+    padding-bottom: 34px;
+    margin-left: 38px;
+
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  &__copyright svg {
+    position: absolute;
+    top: 23px;
+    right: 39px;
+  }
+}
