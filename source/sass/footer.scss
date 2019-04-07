@@ -2,8 +2,8 @@
 @import "partials/mixins";
 
 .page-footer {
-  width: $width-mobile;
   @include block-center;
+  width: $width-mobile;
 
   background-color: $footer-bg-color;
 
