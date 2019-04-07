@@ -53,3 +53,7 @@ a {
   @include block-center;
   width: $width-mobile;
 }
+
+.modal-basket {
+  display: none;
+}
