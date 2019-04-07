@@ -11,10 +11,6 @@
     font-weight: bold;
   }
 
-  &__picture {
-    @include clear;
-  }
-
   &__list {
     @include clear-list;
   }
