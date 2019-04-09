@@ -1,6 +1,3 @@
-@import "partials/mixins";
-@import "partials/params";
-
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -27,36 +24,4 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/opensansbold.woff2");
-}
-
-body {
-  @include clear;
-  font-family: "Open Sans", "Helvetica", sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  @include block-center;
-  width: $width-mobile;
-}
-
-.modal-basket {
-  display: none;
 }

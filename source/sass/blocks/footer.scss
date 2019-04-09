@@ -1,5 +1,7 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "../variables";
+@import "../mixins";
+
+$footer-bg-color: rgb(241, 241, 241);
 
 .page-footer {
   @include block-center;

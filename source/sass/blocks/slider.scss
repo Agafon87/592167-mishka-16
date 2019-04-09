@@ -1,8 +1,8 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "../variables";
+@import "../mixins";
 
 .slider {
-  &__button-style {
+  &__buttons {
     display: flex;
     margin-bottom: 38px;
   }

@@ -1,16 +1,21 @@
-@import "partials/mixins";
-@import "partials/params";
+@import "../variables";
+@import "../mixins";
 
 .page-logo {
   @include block-center;
+
   position: relative;
-  padding: 22px 0;
-  padding-left: 116px;
+
   width: $width-mobile;
-  box-sizing: border-box;
+
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &__title {
     display: block;
+
+    padding: 40px 0;
   }
 
   &__menu {

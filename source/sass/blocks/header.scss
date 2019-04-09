@@ -1,5 +1,5 @@
-@import "partials/mixins";
-@import "partials/params";
+@import "../variables";
+@import "../mixins";
 
 .page-header {
   @include block-center;

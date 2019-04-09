@@ -1,4 +1,4 @@
-@import "params";
+@import "variables";
 
 @mixin clear {
   padding: 0;
@@ -17,8 +17,8 @@
 @mixin button {
   display: block;
   width: 259px;
-  height: 52px;
   padding-top: 15px;
+  padding-bottom: 15px;
 
   font-size: 17px;
   line-height: 20px;

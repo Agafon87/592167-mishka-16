@@ -1,12 +1,10 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "../variables";
+@import "../mixins";
 
 .social {
-  &__list {
-    @include clear-list;
-    display: flex;
-    justify-content: center;
-  }
+  @include clear-list;
+  display: flex;
+  justify-content: center;
 
   &__item {
     display: block;

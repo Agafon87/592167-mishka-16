@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,7 +12,7 @@
 
   <section class="page-logo">
     <h2 class="visually-hidden">Mishka</h2>
-    <img class="page-logo__title" src="./img/logo-mobile.svg" alt="Заголовок сайта" width="86" height="35">
+    <a class="page-logo__title"></a>
     <img class="page-logo__menu" src="./img/icon-menu-open.svg" alt="Иконка открытия меню" width="20" height="14">
   </section>
 
@@ -60,12 +61,12 @@
       <ul class="main-header__list">
         <li class="main-header__item">
           <a class="interior" href="#">
-            <span class="item-title">Предметы интерьера</span>
+            <span class="main-header__item-title">Предметы интерьера</span>
           </a>
         </li>
         <li class="main-header__item">
           <a class="child-toy" href="#">
-            <span class="item-title">Детские игрушки</span>
+            <span class="main-header__item-title">Детские игрушки</span>
           </a>
         </li>
       </ul>
@@ -79,16 +80,16 @@
       </p>
       <table class="featured__table">
         <tr>
-          <td class="featured__cell1">Цвет:</td>
-          <td class="featured__cell2">«Тиффани»/серый</td>
+          <td class="featured__cell-left">Цвет:</td>
+          <td class="featured__cell-right">«Тиффани»/серый</td>
         </tr>
         <tr>
-          <td class="featured__cell1">Диаметр:</td>
-          <td class="featured__cell2">25 см</td>
+          <td class="featured__cell-left">Диаметр:</td>
+          <td class="featured__cell-right">25 см</td>
         </tr>
         <tr>
-          <td class="featured__cell1">Высота:</td>
-          <td class="featured__cell2">15 см</td>
+          <td class="featured__cell-left">Высота:</td>
+          <td class="featured__cell-right">15 см</td>
         </tr>
       </table>
       <img class="featured__picture" src="img/triple-set-mobile@1x.jpg" alt="Изображение вязаных корзинок">
@@ -99,19 +100,18 @@
         Заказать
       </a>
     </section>
-    <div class="separetor">
-      <img class="picture-zigzag" src="img/bg-zigzag-line.svg" alt="Изображение разделителя" width="320" height="6">
+    <div class="separator">
     </div>
     <div class="about-us">
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__flower">Экологически чистые материалы</li>
-          <li class="about__item about__money">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__heart">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__ball">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__rocket">Поддержка отечественного производителя</li>
-          <li class="about__item about__gift">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--style-flower">Экологически чистые материалы</li>
+          <li class="about__item about__item--style-money">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--style-heart">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item--style-ball">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--style-rocket">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--style-gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -130,7 +130,7 @@
           <p class="feedback__author-email">
             @misssssiskras
           </p>
-          <div class="slider__button-style">
+          <div class="slider__buttons">
             <button class="slider__button slider__prev" type="button">
               <span class="visually-hidden">
                 Предыдущий отзыв
@@ -146,8 +146,7 @@
         <a class="button" href="#">Написать</a>
       </section>
     </div>
-    <div class="separetor">
-      <img class="picture-zigzag" src="img/bg-zigzag-line.svg" alt="Изображение разделителя" width="320" height="6">
+    <div class="separator">
     </div>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
@@ -161,27 +160,27 @@
       </div>
       <img class="contacts__map" src="img/map-mobile@1x.jpg"
         alt="Наш адрес г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-      <a class="button" href="#">
+      <a class="contacts__button" href="#">
         Напишите нам
       </a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <ul class="social__list">
+    <ul class="social">
       <li>
-        <a class="social__item social__insta" href="#" aria-label="Мы в инстаграмме">
+        <a class="social__item social__item-insta" href="#" aria-label="Мы в инстаграмме">
           <img class="social__icon social__icon--insta" src="img/icon-insta.svg" alt="Мы в инстаграмме" width="22"
             height="21">
         </a>
       </li>
       <li>
-        <a class="social__item social__fb" href="#" aria-label="Мы в фейсбуке">
+        <a class="social__item social__item-fb" href="#" aria-label="Мы в фейсбуке">
           <img class="social__icon social__icon--fb" src="img/icon-fb.svg" alt="Мы в фейсбуке" width="15" height="28">
         </a>
       </li>
       <li>
-        <a class="social__item social__twitter" href="#" aria-label="Мы в твиттере">
+        <a class="social__item social__item-twitter" href="#" aria-label="Мы в твиттере">
           <img class="social__icon social__icon--twitter" src="img/icon-twitter.svg" alt="Мы в твиттере" width="23"
             height="20">
         </a>

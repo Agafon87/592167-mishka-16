@@ -1,5 +1,5 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "../variables";
+@import "../mixins";
 
 .about {
   padding: 0 28px;
@@ -25,12 +25,12 @@
     font-weight: bold;
   }
 
-  &__flower {
+  &__item--style-flower {
     padding-top: 66px;
     width: 175px;
   }
 
-  &__flower::before {
+  &__item--style-flower::before {
     position: absolute;
     top: 12px;
     left: 10px;
@@ -45,12 +45,12 @@
     content: "";
   }
 
-  &__money {
+  &__item--style-money {
     padding-top: 83px;
     width: 205px;
   }
 
-  &__money::before {
+  &__item--style-money::before {
     position: absolute;
     top: 30px;
     left: 2px;
@@ -65,12 +65,12 @@
     content: "";
   }
 
-  &__heart {
+  &__item--style-heart {
     padding-top: 83px;
     width: 185px;
   }
 
-  &__heart::before {
+  &__item--style-heart::before {
     position: absolute;
     top: 35px;
     left: 10px;
@@ -85,12 +85,12 @@
     content: "";
   }
 
-  &__ball {
+  &__item--style-ball {
     padding-top: 83px;
     width: 215px;
   }
 
-  &__ball::before {
+  &__item--style-ball::before {
     position: absolute;
     top: 32px;
     left: 5px;
@@ -105,12 +105,12 @@
     content: "";
   }
 
-  &__rocket {
+  &__item--style-rocket {
     padding-top: 83px;
     width: 255px;
   }
 
-  &__rocket::before {
+  &__item--style-rocket::before {
     position: absolute;
     top: 33px;
     left: -5px;
@@ -125,12 +125,12 @@
     content: "";
   }
 
-  &__gift {
+  &__item--style-gift {
     padding-top: 83px;
     width: 200px;
   }
 
-  &__gift::before {
+  &__item--style-gift::before {
     position: absolute;
     top: 30px;
     left: 5px;

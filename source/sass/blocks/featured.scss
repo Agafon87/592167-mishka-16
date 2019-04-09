@@ -1,5 +1,5 @@
-@import "partials/params";
-@import "partials/mixins";
+@import "../variables";
+@import "../mixins";
 
 .featured {
   padding-left: 30px;
@@ -43,14 +43,14 @@
     border-collapse: collapse;
   }
 
-  &__cell1 {
+  &__cell-left {
     padding-top: 12px;
     padding-bottom: 7px;
 
     border-bottom: 1px solid $table-border-color;
   }
 
-  &__cell2 {
+  &__cell-right {
     padding-top: 11px;
     padding-bottom: 6px;
     padding-left: 17px;
@@ -70,9 +70,5 @@
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
-  }
-
-  .button {
-    @include button;
   }
 }

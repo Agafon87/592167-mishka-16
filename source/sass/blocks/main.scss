@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../mixins";
+@import "fonts";
+
+body {
+  @include clear;
+  // @include font-face;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @include block-center;
+  width: $width-mobile;
+}
+
+.modal-basket {
+  display: none;
+}
+
+.separator {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  height: 6px;
+}
+
+.button {
+  @include button;
+}
