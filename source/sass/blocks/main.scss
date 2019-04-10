@@ -34,12 +34,3 @@ a {
 .modal-basket {
   display: none;
 }
-
-.separator {
-  background-image: url("../../img/bg-zigzag-line.svg");
-  height: 6px;
-}
-
-.button {
-  @include button;
-}
