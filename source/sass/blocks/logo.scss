@@ -1,0 +1,26 @@
+@import "../variables";
+@import "../mixins";
+
+.page-logo {
+  @include block-center;
+
+  position: relative;
+
+  width: $width-mobile;
+
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &__title {
+    display: block;
+
+    padding: 40px 0;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 32px;
+    right: 31px;
+  }
+}

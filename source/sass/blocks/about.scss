@@ -1,0 +1,147 @@
+@import "../variables";
+@import "../mixins";
+
+.about {
+  padding: 0 28px;
+  margin-bottom: 55px;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__list {
+    @include clear-list;
+  }
+
+  &__item {
+    position: relative;
+
+    padding-top: 45px;
+
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__item--style-flower {
+    padding-top: 66px;
+    width: 175px;
+  }
+
+  &__item--style-flower::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+
+    width: 32px;
+    height: 37px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+
+  &__item--style-money {
+    padding-top: 83px;
+    width: 205px;
+  }
+
+  &__item--style-money::before {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+
+  &__item--style-heart {
+    padding-top: 83px;
+    width: 185px;
+  }
+
+  &__item--style-heart::before {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+
+  &__item--style-ball {
+    padding-top: 83px;
+    width: 215px;
+  }
+
+  &__item--style-ball::before {
+    position: absolute;
+    top: 32px;
+    left: 5px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+
+  &__item--style-rocket {
+    padding-top: 83px;
+    width: 255px;
+  }
+
+  &__item--style-rocket::before {
+    position: absolute;
+    top: 33px;
+    left: -5px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+
+  &__item--style-gift {
+    padding-top: 83px;
+    width: 200px;
+  }
+
+  &__item--style-gift::before {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+  }
+}

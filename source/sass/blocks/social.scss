@@ -1,0 +1,25 @@
+@import "../variables";
+@import "../mixins";
+
+.social {
+  @include clear-list;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    display: block;
+    padding: 20px;
+  }
+
+  &__insta {
+    padding-top: 30px;
+  }
+
+  &__fb {
+    padding-top: 25px;
+  }
+
+  &__twitter {
+    padding-top: 30px;
+  }
+}

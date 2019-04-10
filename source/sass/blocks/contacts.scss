@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixins";
+
+.contacts {
+  position: relative;
+  margin-bottom: 40px;
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__email p,
+  &__address p {
+    @include clear;
+  }
+
+  &__email,
+  &__address {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__email p:first-child,
+  &__address p:first-child {
+    padding-right: 30px;
+    flex-shrink: 0;
+  }
+
+  &__email {
+    margin-bottom: 30px;
+  }
+
+  &__email .email-link {
+    display: block;
+    min-height: 10px;
+
+    color: $color-black;
+
+    border-bottom: 1px solid $color-lime;
+  }
+
+  &__address {
+    margin-bottom: 36px;
+  }
+
+  &__map {
+    margin-bottom: 34px;
+  }
+
+  &__button {
+    margin-left: 30px;
+
+    @include button;
+    font-size: 18px;
+  }
+}
