@@ -3,12 +3,10 @@
 
 .page-header {
   @include block-center;
-  width: $width-mobile;
 
   &__list {
     @include clear-list;
   }
-
 
   &__item {
     position: relative;

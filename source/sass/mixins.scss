@@ -13,20 +13,3 @@
 @mixin block-center {
   margin: 0 auto;
 }
-
-@mixin button {
-  display: block;
-  width: 259px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: $button-border-color;
-
-  box-sizing: border-box;
-  border: 2px solid $button-border-color;
-}

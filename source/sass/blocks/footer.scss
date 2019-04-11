@@ -5,7 +5,6 @@ $footer-bg-color: rgb(241, 241, 241);
 
 .page-footer {
   @include block-center;
-  width: $width-mobile;
 
   background-color: $footer-bg-color;
 
