@@ -5,33 +5,67 @@ $footer-bg-color: rgb(241, 241, 241);
 
 .page-footer {
   @include block-center;
+  display: flex;
+  flex-direction: column;
 
   background-color: $footer-bg-color;
+}
 
-  &__copyright {
-    position: relative;
+.page-footer__logo {
+  display: none;
+}
 
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
+.page-footer__copyright {
+  position: relative;
 
-    border-top: 1px solid $footer-separator-color;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  border-top: 1px solid $footer-separator-color;
+}
+
+.page-footer__copyright p {
+  @include clear;
+  padding-top: 28px;
+  padding-bottom: 34px;
+  margin-left: 38px;
+
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.page-footer__copyright svg {
+  position: absolute;
+  top: 23px;
+  right: 39px;
+}
+
+@media (min-width: $width-tablet) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  &__copyright p {
-    @include clear;
-    padding-top: 28px;
-    padding-bottom: 34px;
-    margin-left: 38px;
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    min-height: 34px;
 
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: bold;
+    background-image: url("../../img/logo-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  &__copyright svg {
-    position: absolute;
-    top: 23px;
-    right: 39px;
+  .social {
+    flex-shrink: 0;
+  }
+
+  .page-footer__copyright {
+    width: 235px;
+    flex-shrink: 0;
   }
 }

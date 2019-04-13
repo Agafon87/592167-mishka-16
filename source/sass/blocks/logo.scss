@@ -2,25 +2,63 @@
 @import "../mixins";
 
 .page-logo {
-  @include block-center;
   position: relative;
+  height: 79px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
-  &__link {
-    @include block-center;
-    display: block;
-    width: 95px;
-    padding: 40px 0;
+.page-logo__link {
+  @include block-center;
+  display: block;
+  width: 95px;
+  padding: 40px 0;
 
-    background-image: url("../../img/logo-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.page-logo__title::after {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+
+  width: 20px;
+  height: 14px;
+
+  background-image: url("../../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+  content: "";
+}
+
+@media (min-width: $width-tablet) {
+  .page-logo {
+    position: absolute;
   }
 
-  &__menu {
-    position: absolute;
-    top: 32px;
-    right: 31px;
+  .page-logo__link {
+    background-image: url("../../img/logo-tablet.svg");
+    width: 115px;
+    margin: 0;
+  }
 
-    cursor: pointer;
+  .page-logo__title::after {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-logo {
+    top: 0;
+    left: 45%;
+  }
+  .page-logo__link {
+    background-image: url("../../img/logo-desktop.svg");
+    width: 170px;
+    @include block-center;
   }
 }

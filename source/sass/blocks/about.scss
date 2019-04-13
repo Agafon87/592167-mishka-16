@@ -2,35 +2,41 @@
 @import "../mixins";
 
 .about {
-  padding: 0 28px;
+  margin-left: 9.4%;
+  margin-right: 9.4%;
   margin-bottom: 55px;
+}
 
-  &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-  }
+.about__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
 
-  &__list {
-    @include clear-list;
-  }
+.about__list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+}
 
-  &__item {
-    position: relative;
+.about__item {
+  position: relative;
 
-    padding-top: 45px;
+  padding-top: 45px;
 
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: bold;
-  }
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 100%;
+}
 
-  &__item--style-flower {
-    padding-top: 66px;
-    width: 175px;
-  }
+.about__item--style-flower {
+  padding-top: 66px;
+  width: 175px;
 
-  &__item--style-flower::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 12px;
     left: 10px;
@@ -44,13 +50,15 @@
 
     content: "";
   }
+}
 
-  &__item--style-money {
-    padding-top: 83px;
-    width: 205px;
-  }
+.about__item--style-money {
+  padding-top: 83px;
+  width: 205px;
 
-  &__item--style-money::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 30px;
     left: 2px;
@@ -64,13 +72,15 @@
 
     content: "";
   }
+}
 
-  &__item--style-heart {
-    padding-top: 83px;
-    width: 185px;
-  }
+.about__item--style-heart {
+  padding-top: 83px;
+  width: 185px;
 
-  &__item--style-heart::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 35px;
     left: 10px;
@@ -84,13 +94,15 @@
 
     content: "";
   }
+}
 
-  &__item--style-ball {
-    padding-top: 83px;
-    width: 215px;
-  }
+.about__item--style-ball {
+  padding-top: 83px;
+  width: 215px;
 
-  &__item--style-ball::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 32px;
     left: 5px;
@@ -104,13 +116,15 @@
 
     content: "";
   }
+}
 
-  &__item--style-rocket {
-    padding-top: 83px;
-    width: 255px;
-  }
+.about__item--style-rocket {
+  padding-top: 83px;
+  width: 255px;
 
-  &__item--style-rocket::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 33px;
     left: -5px;
@@ -124,13 +138,15 @@
 
     content: "";
   }
+}
 
-  &__item--style-gift {
-    padding-top: 83px;
-    width: 200px;
-  }
+.about__item--style-gift {
+  padding-top: 83px;
+  width: 200px;
 
-  &__item--style-gift::before {
+  order: 0;
+
+  &::before {
     position: absolute;
     top: 30px;
     left: 5px;
@@ -143,5 +159,68 @@
     background-position: 0 0;
 
     content: "";
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .about {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    margin-bottom: 100px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .about__item {
+    width: 334px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__item--style-ball {
+    order: 1;
+  }
+
+  .about__item--style-money {
+    order: 2;
+  }
+
+  .about__item--style-rocket {
+    order: 3;
+  }
+
+  .about__item--style-heart {
+    order: 4;
+  }
+
+  .about__item--style-gift {
+    order: 5;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about {
+    margin-left: 225px;
+    margin-right: 225px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    width: 350px;
   }
 }

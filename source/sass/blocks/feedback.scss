@@ -2,37 +2,115 @@
 @import "../mixins";
 
 .feedback {
-  padding: 0 30px;
+  position: relative;
+
+  margin-left: 9.4%;
+  margin-right: 9.4%;
   margin-bottom: 34px;
+}
 
-  &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
+.feedback__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.feedback__text {
+  margin-top: 24px;
+  margin-bottom: 27px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.feedback__author-name {
+  @include clear;
+  margin-bottom: 3px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.feedback__author-email {
+  @include clear;
+  margin-bottom: 29px;
+
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.feedback-slider__buttons {
+  position: static;
+
+  margin-bottom: 38px;
+}
+
+.feedback__button {
+  position: static;
+}
+
+.feedback__picture {
+  position: static;
+
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .feedback {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    margin-bottom: 150px;
   }
 
-  &__text {
-    margin-top: 24px;
-    margin-bottom: 27px;
+  .feedback-slider__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-    font-size: 15px;
-    line-height: 30px;
+    margin-bottom: 0;
   }
 
-  &__author-name {
-    @include clear;
-    margin-bottom: 3px;
+  .feedback-slider__buttons .slider__button {
+    border: none;
+  }
 
+  .feedback__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .feedback__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__text {
     font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
   }
 
-  &__author-email {
-    @include clear;
-    margin-bottom: 29px;
+  .feedback__picture {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
 
-    font-size: 17px;
-    line-height: 30px;
+    display: block;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .feedback {
+    margin-left: 225px;
+  }
+
+  .feedback__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .feedback__picture {
+    left: -175px;
   }
 }

@@ -4,8 +4,15 @@
 
 body {
   @include clear;
-  // @include font-face;
   font-family: "Open Sans", "Helvetica", sans-serif;
+  min-width: 320px;
+  max-width: 1150px;
+  @include block-center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {

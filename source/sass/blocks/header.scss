@@ -2,70 +2,135 @@
 @import "../mixins";
 
 .page-header {
-  @include block-center;
+}
 
-  &__list {
-    @include clear-list;
+.page-header__list {
+  @include clear-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__item {
+  position: relative;
+
+  width: 100%;
+
+  border-top: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.page-header__item a {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  padding-right: 8px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: $color-black;
+}
+
+.page-header__search {
+  display: flex;
+}
+
+.page-header__search::before {
+  position: absolute;
+  top: 36px;
+  left: 32px;
+
+  width: 18px;
+  height: 19px;
+
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.2;
+  content: "";
+}
+
+.page-header__search svg {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $color-lime;
+    opacity: 1;
   }
 
-  &__item {
-    position: relative;
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-    width: 100%;
+.page-header__basket svg {
+  position: absolute;
+  top: 32px;
+  left: 32px;
 
-    border-top: 1px solid $border-color;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: $color-lime;
+    opacity: 1;
   }
 
-  &__item:last-child {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .page-header__list {
+    flex-direction: row;
+  }
+
+  .page-header__item {
     border-bottom: 1px solid $border-color;
   }
 
-  &__item a {
-    display: block;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 76px;
-
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-
-    color: $color-black;
+  .page-header__search {
+    width: 82px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    margin-left: auto;
   }
 
-  &__search svg {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-
-    opacity: 0.2;
+  .page-header__search .main-search {
+    display: none;
   }
 
-  &__search svg:hover,
-  &__search svg:focus {
-    fill: $color-lime;
-    opacity: 1;
+  .page-header__catalog {
+    width: 235px;
+    flex-shrink: 0;
+    border-right: 1px solid $border-color;
   }
 
-  &__search svg:active {
-    opacity: 0.3;
+  .page-header__catalog a {
+    padding-left: 45px;
+    padding-right: 35px;
   }
 
-  &__basket svg {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-
-    opacity: 0.2;
+  .page-header__basket {
+    width: 315px;
+    flex-shrink: 0;
   }
+}
 
-  &__basket svg:hover,
-  &__basket svg:focus {
-    fill: $color-lime;
-    opacity: 1;
-  }
-
-  &__basket svg:active {
-    opacity: 0.3;
-  }
+@media (min-width: $width-desktop) {
+  // .page-header__list {
+  //   flex-direction: row;
+  // }
 }
