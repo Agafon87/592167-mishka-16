@@ -1,9 +1,6 @@
 @import "../variables";
 @import "../mixins";
 
-.page-header {
-}
-
 .page-header__list {
   @include clear-list;
   display: flex;

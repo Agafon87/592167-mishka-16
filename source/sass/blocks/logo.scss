@@ -56,9 +56,10 @@
     top: 0;
     left: 45%;
   }
+
   .page-logo__link {
+    @include block-center;
     background-image: url("../../img/logo-desktop.svg");
     width: 170px;
-    @include block-center;
   }
 }

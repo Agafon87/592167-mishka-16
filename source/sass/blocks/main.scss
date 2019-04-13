@@ -4,10 +4,10 @@
 
 body {
   @include clear;
+  @include block-center;
   font-family: "Open Sans", "Helvetica", sans-serif;
   min-width: 320px;
   max-width: 1150px;
-  @include block-center;
 }
 
 img {
