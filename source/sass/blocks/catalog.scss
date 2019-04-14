@@ -1,0 +1,77 @@
+@import "../mixins";
+@import "../variables";
+
+.catalog {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.catalog__list {
+  @include clear-list;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+  border: 1px solid $bg-light-grey;
+}
+
+.catalog__item-picture {
+  min-width: 260px;
+  min-height: 195px;
+}
+
+.catalog__item-picture--hare {
+  background-image: url("../../img/photo-hare-mobile@1x.jpg");
+}
+
+.catalog__item-picture--bowl {
+  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
+}
+
+.catalog__item-picture--toys {
+  background-image: url("../../img/photo-toys-mobile@1x.jpg");
+}
+
+.catalog__item-wrapper {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.catalog__item-title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog__item-description {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.price-wrapper {
+  position: relative;
+  border-top: 1px solid $bg-light-grey;
+}
+
+.catalog__item-price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog__item-basket {
+  position: absolute;
+  top: 15px;
+  right: 0;
+
+  display: block;
+  width: 20px;
+  height: 19px;
+
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.2;
+}
