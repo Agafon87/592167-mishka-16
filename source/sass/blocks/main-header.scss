@@ -90,7 +90,8 @@
 
 @media (min-width: $width-tablet) {
   .main-header {
-
+    margin-top: -85px;
+    padding-top: 80px;
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
 
@@ -139,6 +140,7 @@
 
 @media (min-width: $width-desktop) {
   .main-header {
+    margin-top: -115px;
     background-image: url("../../img/hero-desktop@1x.jpg");
   }
 }
