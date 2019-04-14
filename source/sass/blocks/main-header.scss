@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../mixins";
 
-$bg-light-grey-index: rgb(249, 249, 249);
+$color-light-grey-index: rgb(249, 249, 249);
 
 .main-header {
   position: relative;
@@ -9,13 +9,13 @@ $bg-light-grey-index: rgb(249, 249, 249);
   min-height: 175px;
   margin-bottom: 27px;
 
-  background-color: $bg-light-grey;
+  background-color: $color-light-grey;
 }
 
 .main-header__index {
   min-height: 300px;
 
-  background-color: $bg-light-grey-index;
+  background-color: $color-light-grey-index;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -14%;

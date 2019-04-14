@@ -8,16 +8,24 @@
 
 .catalog__list {
   @include clear-list;
+
 }
 
 .catalog__item {
   margin-bottom: 20px;
-  border: 1px solid $bg-light-grey;
+  border: 1px solid $color-light-grey;
+  min-width: 260px;
+  box-sizing: border-box;
 }
 
 .catalog__item-picture {
-  min-width: 260px;
   min-height: 195px;
+
+  // background-color: $color-light-grey;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  box-sizing: border-box;
 }
 
 .catalog__item-picture--hare {
@@ -51,7 +59,7 @@
 
 .price-wrapper {
   position: relative;
-  border-top: 1px solid $bg-light-grey;
+  border-top: 1px solid $color-light-grey;
 }
 
 .catalog__item-price {
