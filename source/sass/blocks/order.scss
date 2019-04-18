@@ -213,17 +213,10 @@
     display: none;
   }
 
-
-
   .order-fieldset__fields-wrapper {
     flex-direction: row;
     align-items: baseline;
     width: 100%;
-
-    // &--phone,
-    // &--mail {
-    //   background-color: $color-light-grey;
-    // }
   }
 
   .order__text {
