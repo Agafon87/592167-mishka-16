@@ -13,3 +13,8 @@
 @mixin block-center {
   margin: 0 auto;
 }
+
+@mixin padding-order {
+  padding-left: 50px;
+  padding-right: 50px;
+}
