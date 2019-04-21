@@ -64,7 +64,7 @@
 
   background-image: url("../../img/icon-play.svg"), url("../../img/video-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 50%, 0 0;
+  background-position: 50% 50%;
   box-sizing: border-box;
 }
 
@@ -97,11 +97,16 @@
   }
 
   .video__title {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 105px;
+
     order: 0;
     font-size: 20px;
 
     &::before {
-      top: 20px;
+      top: 35px;
+      left: 40px;
     }
   }
 
@@ -109,15 +114,23 @@
     min-width: 668px;
     min-height: 455px;
 
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image:  url("../../img/icon-play.svg"), url("../../img/video-tablet@1x.jpg");
   }
 
   .video__description {
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 35px;
+    width: 100%;
     font-size: 15px;
+    line-height: 30px;
+    box-sizing: border-box;
   }
 
   .video__button {
     width: 584px;
+    margin-bottom: 50px;
   }
 }
 

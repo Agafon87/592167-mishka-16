@@ -106,7 +106,7 @@ $color-light-grey-index: rgb(249, 249, 249);
   .main-header {
     margin-top: -64px;
     margin-bottom: 33px;
-    padding-top: 80px;
+    padding-top: 65px;
 
     &::after {
       position: absolute;
@@ -127,12 +127,13 @@ $color-light-grey-index: rgb(249, 249, 249);
   .main-header--index {
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
+    padding-top: 80px;
   }
 
   .main-header__title {
     width: 510px;
-    margin-bottom: 372px;
-    padding-top: 75px;
+    margin-bottom: 65px;
+    padding-top: 30px;
 
     font-size: 43px;
     line-height: 50px;
@@ -140,6 +141,7 @@ $color-light-grey-index: rgb(249, 249, 249);
 
   .main-header--index .main-header__title {
     margin-bottom: 372px;
+    padding-top: 75px;
   }
 
   .main-header__list {
