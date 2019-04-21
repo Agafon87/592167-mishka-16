@@ -45,6 +45,7 @@
   .page-footer {
     @include clear;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -54,7 +55,6 @@
     @include clear;
     padding-top: 55px;
     padding-bottom: 55px;
-    margin-right: 160px;
     display: block;
     width: 102px;
     min-height: 34px;
@@ -65,10 +65,8 @@
   }
 
   .page-footer__copyright {
-    margin-left: auto;
     padding-right: 25px;
     border-top: none;
-    flex-shrink: 0;
   }
 
   .page-footer__copyright p {
