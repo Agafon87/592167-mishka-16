@@ -24,3 +24,9 @@
   background-image: url("../img/icon-right-arrow.svg");
   border-left: none;
 }
+
+@media (min-width: $width-tablet) {
+  .slider__button {
+    width: 85px;
+  }
+}

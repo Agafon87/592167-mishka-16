@@ -2,13 +2,14 @@
 @import "../mixins";
 
 $first-line-header-padding-top: 32px;
-$second-line-header-padding-top: 25px;
+$first-line-header-padding-bottom: 20px;
+$second-line-header-padding-top: 20px;
 
 .header {
   position: relative;
   z-index: 2;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header__list {
@@ -16,8 +17,8 @@ $second-line-header-padding-top: 25px;
 }
 
 .header__list-item {
-  padding: 32px 0;
-  // text-align: center;
+  position: relative;
+  padding: 27px 0 27px 75px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -35,6 +36,38 @@ $second-line-header-padding-top: 25px;
   &--delivery,
   &--new {
     display: none;
+  }
+
+  &--search::before {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+    opacity: 0.2;
+  }
+
+  &--basket::before {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    width: 21px;
+    height: 18px;
+
+    background-image: url("../../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    content: "";
+    opacity: 0.2;
   }
 }
 
@@ -78,50 +111,68 @@ $second-line-header-padding-top: 25px;
   .header__list {
     display: flex;
     flex-flow: row wrap;
-    width: 670px;
+    min-width: 668px;
     margin: 0 auto;
-    padding: 0 52px;
   }
 
   .header__list-item {
+    padding: 0;
+    padding-top: $first-line-header-padding-top;
+    padding-bottom: $first-line-header-padding-bottom;
     font-size: 15px;
     order: 7;
     border: none;
+    box-sizing: border-box;
 
     &--logo {
-      width: 320px;
+      padding-top: 22px;
+      width: 47.9%;
       order: 0;
       border-right: 1px solid $border-color;
     }
 
     &--search {
       order: 1;
-      width: 82px;
+      width: 12.3%;
       border-right: 1px solid $border-color;
       border-left: none;
       font-size: 0;
-      background: url("../../img/icon-search.svg") center center no-repeat;
+
+      &::before {
+        top: 37px;
+        left: 33px;
+      }
     }
 
     &--basket {
       order: 2;
+      width: 39.7%;
       padding-left: 82px;
+
+      font-size: 17px;
+
+
+      &::before {
+        top: 35px;
+        left: 32px;
+      }
     }
 
     &--catalog {
       order: 3;
-      padding: 25px 0 0;
+      padding-top: $second-line-header-padding-top;
     }
 
     &--order {
       order: 4;
-      padding: 25px 0 0 37px;
+      padding-top: $second-line-header-padding-top;
+      padding-left: 37px;
     }
 
     &--delivery {
       color: #444444;
       display: block;
-      padding: 25px 0 0;
+      padding-top: $second-line-header-padding-top;
       margin-left: auto;
       font-weight: normal;
     }
@@ -150,8 +201,7 @@ $second-line-header-padding-top: 25px;
 
 @media (min-width: $width-desktop) {
   .header__list {
-    @include clear-list;
-    width: 1048px;
+    min-width: 1050px;
   }
 
   .header__list-item {
@@ -159,8 +209,10 @@ $second-line-header-padding-top: 25px;
     order: 9;
     border: none;
     padding-top: $first-line-header-padding-top;
+    padding-bottom: 32px;
 
     &--catalog {
+      width: 17.6%;
       font-size: 17px;
       order: 0;
       padding-right: 32px;
@@ -168,31 +220,33 @@ $second-line-header-padding-top: 25px;
     }
 
     &--order {
+      width: 21.4%;
       font-size: 17px;
       order: 1;
       padding-left: 35px;
     }
 
     &--logo {
-      width: 100px;
+      width: 27.6%;
       order: 2;
       border-right: 1px solid $border-color;
       padding-top: 10px;
-      padding-left: 80px;
+      padding-left: 40px;
       padding-bottom: 0;
       padding-right: 150px;
     }
 
     &--search {
       order: 3;
-      width: 82px;
+      width: 8%;
       border-right: 1px solid $border-color;
       border-left: none;
       font-size: 0;
-      background: url("../../img/icon-search.svg") center center no-repeat;
+      // background: url("../../img/icon-search.svg") center center no-repeat;
     }
 
     &--basket {
+      width: 25.4%;
       font-size: 17px;
       padding-left: 80px;
       order: 4;
@@ -209,7 +263,7 @@ $second-line-header-padding-top: 25px;
       display: block;
       order: 6;
       padding-top: $second-line-header-padding-top;
-      padding-left: 35px;
+      padding-left: 30px;
     }
 
     &--delivery {

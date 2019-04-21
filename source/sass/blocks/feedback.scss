@@ -60,7 +60,7 @@
   .feedback {
     margin-left: 6.5%;
     margin-right: 6.5%;
-    margin-bottom: 150px;
+    margin-bottom: 115px;
   }
 
   .feedback-slider__buttons {
@@ -79,20 +79,27 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 175px;
   }
 
   .feedback__title {
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__text {
+    margin-bottom: 55px;
     font-size: 17px;
+  }
+
+  .feedback__author-name {
+    font-size: 18px;
   }
 
   .feedback__picture {
     position: absolute;
-    top: -50px;
+    top: -77px;
     left: -50px;
     z-index: -1;
 
@@ -103,6 +110,7 @@
 @media (min-width: $width-desktop) {
   .feedback {
     margin-left: 225px;
+    margin-bottom: 160px;
   }
 
   .feedback__title {
@@ -111,6 +119,21 @@
   }
 
   .feedback__picture {
+    top: -70px;
     left: -175px;
+  }
+
+  .feedback__text {
+    margin-bottom: 40px;
+  }
+
+  .feedback-slider__buttons {
+    bottom: 5px;
+    right: -25px;
+  }
+
+  .feedback__button {
+    top: 10px;
+    right: -25px;
   }
 }
