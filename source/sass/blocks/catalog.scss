@@ -160,6 +160,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .catalog {
+    margin-bottom: 55px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +174,12 @@
     flex-direction: column;
     width: 316px;
     margin-left: 50px;
+    margin-bottom: 0;
+  }
+
+  .catalog__item-wrapper {
+    margin-left: 26px;
+    margin-right: 26px;
   }
 
   .catalog__item-picture {
@@ -189,5 +199,10 @@
 
   .catalog__item-picture--toys {
     background-image: url("../../img/photo-toys-desktop@1x.jpg");
+  }
+
+  .catalog__item-price {
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }

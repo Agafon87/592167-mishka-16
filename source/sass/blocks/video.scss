@@ -135,6 +135,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .video {
+    margin-bottom: 105px;
+  }
+
   .video__wrap {
     flex-direction: row;
   }
@@ -152,12 +156,13 @@
 
   .video__title {
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 95px;
     width: 155px;
     padding-bottom: 0;
     margin-bottom: 0;
 
     &::before {
+      top: 42px;
       left: 0;
     }
   }
@@ -170,14 +175,16 @@
     width: 682px;
     height: 455px;
 
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../../img/icon-play.svg"), url("../../img/video-desktop@1x.jpg");
 
     box-sizing: border-box;
   }
 
   .video__description {
+    padding-top: 35px;
     padding-left: 0;
-    margin-bottom: 50px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
   }
 
   .video__button {

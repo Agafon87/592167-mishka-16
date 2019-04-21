@@ -177,14 +177,22 @@ $color-light-grey-index: rgb(249, 249, 249);
 @media (min-width: $width-desktop) {
   .main-header {
     margin-top: -75px;
-    margin-bottom: 115px;
+    margin-bottom: 120px;
+    padding-top: 85px;
   }
 
   .main-header__title {
     width: 615px;
-    margin-bottom: 355px;
+    margin-bottom: 0;
+    padding-top: 10px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .main-header--index {
+    padding-top: 80px;
+    margin-top: -75px;
+    margin-bottom: 115px;
   }
 
   .main-header--index .main-header__title {
