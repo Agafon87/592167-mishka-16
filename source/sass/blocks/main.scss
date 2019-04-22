@@ -4,8 +4,14 @@
 
 body {
   @include clear;
-  // @include font-face;
+  @include block-center;
   font-family: "Open Sans", "Helvetica", sans-serif;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -28,8 +34,21 @@ a {
 
 .container {
   @include block-center;
+  margin-bottom: 0;
 }
 
 .modal-basket {
   display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .container {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .container {
+    margin-bottom: 80px;
+  }
 }

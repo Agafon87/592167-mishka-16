@@ -3,23 +3,48 @@
 
 .social {
   @include clear-list;
+  @include block-center;
+  padding-top: 15px;
+  padding-bottom: 22px;
   display: flex;
-  justify-content: center;
+  width: 140px;
+  justify-content: space-between;
+}
 
-  &__item {
-    display: block;
-    padding: 20px;
+.social__item {
+  display: block;
+  padding: 0;
+
+  &--insta {
+    padding-top: 5px;
   }
 
-  &__insta {
-    padding-top: 30px;
+  &--twitter {
+    padding-top: 5px;
   }
+}
 
-  &__fb {
+@media (min-width: $width-tablet) {
+  .social {
+    margin: 0;
     padding-top: 25px;
+    margin-left: 100px;
   }
 
-  &__twitter {
-    padding-top: 30px;
+  .social__item {
+    display: block;
+    padding: 0;
+    padding-top: 10px;
+
+    &--fb {
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .social {
+    flex-shrink: 0;
+    margin-left: -245px;
   }
 }
