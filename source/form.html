@@ -45,13 +45,14 @@
     <section class="main-header">
       <h2 class="main-header__title">Вязание на заказ</h2>
     </section>
+
     <form class="order" action="https://echo.htmlacademy.ru" method="POST">
       <p class="order__discription">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
         уточнить детали.
       </p>
 
-      <fieldset class="order-fieldset">
+      <div class="order-fieldset order-fieldset--good-type">
         <div class="order-fieldset__title-wrapper">
           <h3 class="order-fieldset__title">Тип</h3>
           <div class="order-fieldset__title-decor"></div>
@@ -66,9 +67,9 @@
             <label class="order__label check__element check__element--circle" for="sort-type-toy">Детская игрушка</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
-      <fieldset class="order-fieldset order-fieldset--good-colors">
+      <div class="order-fieldset order-fieldset--good-colors">
         <div class="order-fieldset__title-wrapper">
           <h3 class="order-fieldset__title">Цвет</h3>
           <div class="order-fieldset__title-decor"></div>
@@ -99,9 +100,9 @@
             <label class="order__label check__element" for="sort-color-orange">Оранжевый</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
-      <fieldset class="order-fieldset order-fieldset--person-info">
+      <div class="order-fieldset order-fieldset--person-info">
         <div class="order-fieldset__fields-wrapper">
           <div class="order-fieldset__title-wrapper">
             <h3 class="order-fieldset__title">фио</h3>
@@ -122,9 +123,9 @@
             </div>
           </div>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="order-fieldset order-fieldset--person-contacts">
+      <div class="order-fieldset order-fieldset--person-contacts">
         <div class="order-fieldset__fields-wrapper">
             <div class="order-fieldset__title-wrapper">
               <h3 class="order-fieldset__title">тел</h3>
@@ -141,9 +142,9 @@
             <input class="order__text" type="text" name="email" id="person-email" placeholder="Ваш Email*">
             <span class="order__decor order__decor--mail"></span>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="order-fieldset order-fieldset--another-info">
+      <div class="order-fieldset order-fieldset--another-info">
         <div class="order-fieldset__fields-wrapper">
             <div class="order-fieldset__title-wrapper">
               <h3 class="order-fieldset__title">доп</h3>
@@ -152,7 +153,7 @@
             <textarea class="order__another-info" name="another-info" id="person-another-info" cols="30" rows="10"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-      </fieldset>
+      </div>
 
       <div class="order__footer">
         <button class="button order__button" type="submit">Отправить заказ</button>
