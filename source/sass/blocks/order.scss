@@ -1,7 +1,7 @@
- @import "../mixins";
- @import "../variables";
+@import "../mixins";
+@import "../variables";
 
- .order {
+.order {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 50px;
@@ -73,8 +73,22 @@
   margin-top: 10px;
 }
 
+.order-fieldset__item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .order-fieldset__list-color .order-fieldset__item {
   margin-bottom: 40px;
+}
+
+.order-fieldset__list-color .order-fieldset__item:last-child {
+  margin-bottom: 0;
 }
 
 .order-fieldset__title {
@@ -95,15 +109,7 @@
   background-color: $color-lime;
 }
 
-.order-fieldset__item {
-  position: relative;
-  margin-bottom: 15px;
-  padding-left: 60px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
 
 .order__label {
   font-size: 17px;
@@ -236,11 +242,12 @@
     @include padding-order;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 5px;
   }
 
   .order__label {
     font-size: 19px;
+    margin-right: 25px;
   }
 
   .order-fieldset {
@@ -255,6 +262,7 @@
 
     &--good-colors {
       background-color: $color-light-grey;
+      margin-bottom: 50px;
     }
 
     &--person-info {
@@ -269,8 +277,12 @@
 
   .order-fieldset__title-wrapper {
     width: 167px;
+    flex-shrink: 0;
   }
 
+  .order-fieldset--person-contacts {
+    padding-top: 40px;
+  }
 
   .order-fieldset--person-contacts .order__text {
     background-color: $color-light-grey;
@@ -278,28 +290,47 @@
 
   .fio-wrapper {
     flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 20px;
   }
 
+  .order-fieldset--person-contacts{
+    padding-bottom: 30px;
+  }
+
+  .order-fieldset--person-contacts .order-fieldset__fields-wrapper {
+    margin-bottom: 20px;
+  }
 
   .order-fieldset__list-color {
+    margin: 0;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
+
+  .order-fieldset__item {
+    padding-left: 80px;
+    width: 240px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 55px;
+  }
+
 
   .order-fieldset--good-type .order-fieldset__item {
     width: 100%;
-    padding-left: 80px;
-    margin-bottom: 54px;
   }
 
   .order-fieldset--good-type .order-fieldset__item:last-child {
     margin-bottom: 0;
   }
 
-  .order-fieldset__item {
-    width: 240px;
-    box-sizing: border-box;
+  .order-fieldset__list-color .order-fieldset__item {
+    margin-bottom: 0;
   }
 
   .order-fieldset__title-decor {
@@ -312,17 +343,22 @@
     width: 100%;
   }
 
-  .order__text {
-    flex-grow: 1;
-    flex-shrink: 0;
+  .order-fieldset--another-info {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-
+  .order__text {
+    padding-left: 15px;
+    flex-grow: 1;
+    font-size: 19px;
+  }
 
   .order__footer {
     @include padding-order;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .order__button {
@@ -330,15 +366,32 @@
   }
 
   .order__decor {
-    top: 25px;
+    top: 15px;
+    right: 25px;
   }
 
   .order-fieldset__prompt {
+    margin: 0;
     order: 0;
+    font-size: 17px;
+  }
+
+  .order-fieldset__personal-data {
+    width: 100%;
+  }
+
+  .order__another-info {
+    // width: 100%;
+    font-size: 19px;
   }
 }
 
 @media (min-width: $width-desktop) {
+  .order__discription {
+    padding-left: 225px;
+    padding-left: 225px;
+  }
+
   .order-fieldset--person-contacts,
   .order-fieldset--person-info,
   .order-fieldset--another-info {

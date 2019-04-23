@@ -57,10 +57,18 @@
   }
 }
 
+
 @media (min-width: $width-tablet) {
   .check__element::before {
     top: -15px;
     width: 52px;
     height: 52px;
+  }
+
+  .check__element--circle-checked::after {
+    top: 0;
+    left: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
