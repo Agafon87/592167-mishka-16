@@ -34,21 +34,8 @@ a {
 
 .container {
   @include block-center;
-  margin-bottom: 0;
 }
 
 .modal-basket {
   display: none;
-}
-
-@media (min-width: $width-tablet) {
-  .container {
-    margin-bottom: 55px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .container {
-    margin-bottom: 80px;
-  }
 }

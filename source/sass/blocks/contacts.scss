@@ -80,7 +80,7 @@ $margin-tablet: 6.5%;
 
 @media (min-width: $width-tablet) {
   .contacts {
-    margin-bottom: 0;
+    margin-bottom: 55px;
   }
 
   .contacts__title {
@@ -142,6 +142,7 @@ $margin-tablet: 6.5%;
     width: 350px;
     margin-top: 140px;
     padding-bottom: 20px;
+    margin-bottom: 80px;
   }
 
   .contacts__title {
