@@ -57,6 +57,16 @@ $margin-tablet: 6.5%;
   color: $color-black;
 
   border-bottom: 1px solid $color-lime;
+
+  &:hover,
+  &:focus {
+    color: $color-email-link;
+    border-bottom-color: $color-email-link;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

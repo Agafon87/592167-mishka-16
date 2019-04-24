@@ -172,6 +172,28 @@ $color-light-grey-index: rgb(249, 249, 249);
     font-size: 20px;
     line-height: 30px;
   }
+
+  .main-header__item .interior:hover,
+  .main-header__item .interior:focus,
+  .main-header__item .child-toy:hover,
+  .main-header__item .child-toy:focus {
+    top: -5px;
+  }
+
+  .main-header__item .interior:hover::after,
+  .main-header__item .child-toy:hover::after {
+    opacity: 0.7;
+  }
+
+  .main-header__item .interior:active,
+  .main-header__item .child-toy:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .main-header__item .interior:active::after,
+  .main-header__item .child-toy:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $width-desktop) {
