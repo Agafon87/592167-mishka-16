@@ -22,7 +22,17 @@
   &--twitter {
     padding-top: 5px;
   }
+
+  &:hover,
+  &:focus {
+    fill: $color-lime;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: $width-tablet) {
   .social {
