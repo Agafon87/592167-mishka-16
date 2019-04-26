@@ -1,0 +1,24 @@
+@import "../variables";
+
+$modal-border-color: rgb(198, 198, 198);
+
+.modal-basket {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  border: 1px solid $modal-border-color;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.modal-baskte__overlay {
+  width: 320px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-basket__main {
+  position: absolute;
+  width: 320px;
+  background-color: $color-white;
+}
