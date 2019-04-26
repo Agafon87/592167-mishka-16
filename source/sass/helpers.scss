@@ -1,0 +1,15 @@
+@import "variables";
+
+.center-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $width-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1050px;
+  }
+}
