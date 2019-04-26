@@ -10,7 +10,6 @@
   margin-right: 30px;
   margin-bottom: 60px;
   min-width: 260px;
-  max-width: 1200px;
 
   border: 1px solid $color-light-grey;
   box-sizing: border-box;
@@ -101,8 +100,8 @@
 
 @media (min-width: $width-tablet) {
   .video {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .video__wrap {

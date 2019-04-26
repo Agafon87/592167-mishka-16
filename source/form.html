@@ -81,40 +81,42 @@
   </svg>
 
   <header class="header">
-    <button class="header__button header__button--close"></button>
-    <span class="header__separator"></span>
-    <ul class="header__list">
-      <li class="header__list-item header__list-item--logo">
-        <a class="header__logo" href="index.html">Mishka</a>
-      </li>
-      <li class="header__list-item header__list-item--catalog">
-        <a href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="header__list-item header__list-item--order">
-        <a>Вязание на заказ</a>
-      </li>
-      <li class="header__list-item header__list-item--search">
-        <a href="#">Поиск по сайту</a>
-        <svg class="header__icon-search" width="18px" height="18px">
-          <use xlink:href="#icon-search"></use>
-        </svg>
-      </li>
-      <li class="header__list-item header__list-item--basket">
-        <a href="#">Корзина: <span>пока пуста</span></a>
-        <svg class="header__icon-basket" width="21px" height="19px">
-          <use xlink:href="#icon-basket"></use>
-        </svg>
-      </li>
-      <li class="header__list-item header__list-item--new">
-        <a href="#">Новые поступления</a>
-      </li>
-      <li class="header__list-item header__list-item--sale">
-        <a href="#">Распродажа</a>
-      </li>
-      <li class="header__list-item header__list-item--delivery">
-        <a href="#">Бесплатная доставка по России</a>
-      </li>
-    </ul>
+    <div class="center-wrapper">
+      <button class="header__button header__button--close"></button>
+      <span class="header__separator"></span>
+      <ul class="header__list">
+        <li class="header__list-item header__list-item--logo">
+          <a class="header__logo" href="index.html">Mishka</a>
+        </li>
+        <li class="header__list-item header__list-item--catalog">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="header__list-item header__list-item--order">
+          <a>Вязание на заказ</a>
+        </li>
+        <li class="header__list-item header__list-item--search">
+          <a href="#">Поиск по сайту</a>
+          <svg class="header__icon-search" width="18px" height="18px">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </li>
+        <li class="header__list-item header__list-item--basket">
+          <a href="#">Корзина: <span>пока пуста</span></a>
+          <svg class="header__icon-basket" width="21px" height="19px">
+            <use xlink:href="#icon-basket"></use>
+          </svg>
+        </li>
+        <li class="header__list-item header__list-item--new">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="header__list-item header__list-item--sale">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="header__list-item header__list-item--delivery">
+          <span>Бесплатная доставка по России</span>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="container">
@@ -123,12 +125,14 @@
     </section>
 
     <form class="order" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="order__discription">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-        уточнить детали.
-      </p>
+      <div class="center-wrapper">
+        <p class="order__discription">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+          уточнить детали.
+        </p>
+      </div>
 
-      <div class="order-fieldset order-fieldset--good-type">
+      <div class="order-fieldset order-fieldset--good-type center-wrapper">
         <div class="order-fieldset__title-wrapper">
           <h3 class="order-fieldset__title">Тип</h3>
           <div class="order-fieldset__title-decor"></div>
@@ -149,46 +153,48 @@
         </ul>
       </div>
 
-      <div class="order-fieldset order-fieldset--good-colors">
-        <div class="order-fieldset__title-wrapper">
-          <h3 class="order-fieldset__title">Цвет</h3>
-          <div class="order-fieldset__title-decor"></div>
+      <div class="bg-color-grey">
+        <div class="order-fieldset order-fieldset--good-colors center-wrapper">
+          <div class="order-fieldset__title-wrapper">
+            <h3 class="order-fieldset__title">Цвет</h3>
+            <div class="order-fieldset__title-decor"></div>
+          </div>
+          <ul class="order-fieldset__list order-fieldset__list-color">
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-white"
+                id="sort-color-white">
+              <label class="order__label check__element" for="sort-color-white">Белый</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-grey"
+                id="sort-color-grey">
+              <label class="order__label check__element" for="sort-color-grey">Серый</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-tiffany"
+                id="sort-color-tiffany">
+              <label class="order__label check__element" for="sort-color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-black"
+                id="sort-color-black">
+              <label class="order__label check__element" for="sort-color-black">Черный</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-pink"
+                id="sort-color-pink">
+              <label class="order__label check__element" for="sort-color-pink">Розовый</label>
+            </li>
+            <li class="order-fieldset__item">
+              <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-orange"
+                id="sort-color-orange">
+              <label class="order__label check__element" for="sort-color-orange">Оранжевый</label>
+            </li>
+          </ul>
         </div>
-        <ul class="order-fieldset__list order-fieldset__list-color">
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-white"
-              id="sort-color-white">
-            <label class="order__label check__element" for="sort-color-white">Белый</label>
-          </li>
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-grey"
-              id="sort-color-grey">
-            <label class="order__label check__element" for="sort-color-grey">Серый</label>
-          </li>
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-tiffany"
-              id="sort-color-tiffany">
-            <label class="order__label check__element" for="sort-color-tiffany">«Тиффани»</label>
-          </li>
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-black"
-              id="sort-color-black">
-            <label class="order__label check__element" for="sort-color-black">Черный</label>
-          </li>
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-pink"
-              id="sort-color-pink">
-            <label class="order__label check__element" for="sort-color-pink">Розовый</label>
-          </li>
-          <li class="order-fieldset__item">
-            <input class="order-fieldset__sort-color visually-hidden" type="checkbox" name="color-orange"
-              id="sort-color-orange">
-            <label class="order__label check__element" for="sort-color-orange">Оранжевый</label>
-          </li>
-        </ul>
       </div>
 
-      <div class="order-fieldset order-fieldset--person-info">
+      <div class="order-fieldset order-fieldset--person-info center-wrapper">
         <div class="order-fieldset__fields-wrapper">
           <div class="order-fieldset__title-wrapper">
             <h3 class="order-fieldset__title">фио</h3>
@@ -213,30 +219,32 @@
         </div>
       </div>
 
-      <div class="order-fieldset order-fieldset--person-contacts">
-        <div class="order-fieldset__fields-wrapper">
-          <div class="order-fieldset__title-wrapper">
-            <h3 class="order-fieldset__title">тел</h3>
-            <div class="order-fieldset__title-decor"></div>
+      <div class="bg-color-grey">
+        <div class="order-fieldset order-fieldset--person-contacts center-wrapper">
+          <div class="order-fieldset__fields-wrapper">
+            <div class="order-fieldset__title-wrapper">
+              <h3 class="order-fieldset__title">тел</h3>
+              <div class="order-fieldset__title-decor"></div>
+            </div>
+            <input class="order__text" type="text" name="phone" id="person-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <svg class="order__decor order__decor--phone" width="24.829px" height="24.333px">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
           </div>
-          <input class="order__text" type="text" name="phone" id="person-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-          <svg class="order__decor order__decor--phone" width="24.829px" height="24.333px">
-            <use xlink:href="#icon-phone"></use>
-          </svg>
-        </div>
-        <div class="order-fieldset__fields-wrapper">
-          <div class="order-fieldset__title-wrapper">
-            <h3 class="order-fieldset__title">e-mail</h3>
-            <div class="order-fieldset__title-decor"></div>
+          <div class="order-fieldset__fields-wrapper">
+            <div class="order-fieldset__title-wrapper">
+              <h3 class="order-fieldset__title">e-mail</h3>
+              <div class="order-fieldset__title-decor"></div>
+            </div>
+            <input class="order__text" type="text" name="email" id="person-email" placeholder="Ваш Email*">
+            <svg class="order__decor order__decor--mail" width="32px" height="32px">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </div>
-          <input class="order__text" type="text" name="email" id="person-email" placeholder="Ваш Email*">
-          <svg class="order__decor order__decor--mail" width="32px" height="32px">
-            <use xlink:href="#icon-mail"></use>
-          </svg>
         </div>
       </div>
 
-      <div class="order-fieldset order-fieldset--another-info">
+      <div class="order-fieldset order-fieldset--another-info center-wrapper">
         <div class="order-fieldset__fields-wrapper">
           <div class="order-fieldset__title-wrapper">
             <h3 class="order-fieldset__title">доп</h3>
@@ -247,51 +255,55 @@
         </div>
       </div>
 
-      <div class="order__footer">
-        <button class="button order__button" type="submit">Отправить заказ</button>
-        <p class="order-fieldset__prompt">
-          *Поля обязательны для заполнения
-        </p>
+      <div class="center-wrapper">
+        <div class="order__footer">
+          <button class="button order__button" type="submit">Отправить заказ</button>
+          <p class="order-fieldset__prompt">
+            *Поля обязательны для заполнения
+          </p>
+        </div>
       </div>
     </form>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <svg width="101.615px" height="34.056px">
-        <use xlink:href="#logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="social">
-      <li>
-        <a class="social__item social__item--insta" href="#" aria-label="Мы в инстаграмме">
-          <svg class="social__icon social__icon--insta" width="21.769px" height="21.334px">
-            <use xlink:href="#icon-insta"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social__item social__item--fb" href="#" aria-label="Мы в фейсбуке">
-          <svg class="social__icon social__icon--fb" width="14.962px" height="27.718px">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social__item social__item--twitter" href="#" aria-label="Мы в твиттере">
-          <svg class="social__icon social__icon--twitter" width="23.494px" height="20.168px">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
+    <div class="page-footer__wrapper center-wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <svg width="101.615px" height="34.056px">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
       </a>
-      <svg class="page-footer__logo-htmlacademy" width="26.943px" height="34.09px">
-        <use xlink:href="#logo-htmlacademy"></use>
-      </svg>
+      <ul class="social">
+        <li>
+          <a class="social__item social__item--insta" href="#" aria-label="Мы в инстаграмме">
+            <svg class="social__icon social__icon--insta" width="21.769px" height="21.334px">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--fb" href="#" aria-label="Мы в фейсбуке">
+            <svg class="social__icon social__icon--fb" width="14.962px" height="27.718px">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--twitter" href="#" aria-label="Мы в твиттере">
+            <svg class="social__icon social__icon--twitter" width="23.494px" height="20.168px">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+        </a>
+        <svg class="page-footer__logo-htmlacademy" width="26.943px" height="34.09px">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
+      </div>
     </div>
   </footer>
 

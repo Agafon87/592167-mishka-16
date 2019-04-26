@@ -81,40 +81,42 @@
   </svg>
 
   <header class="header">
-    <button class="header__button header__button--close"></button>
-    <span class="header__separator"></span>
-    <ul class="header__list">
-      <li class="header__list-item header__list-item--logo">
-        <a class="header__logo" href="index.html">Mishka</a>
-      </li>
-      <li class="header__list-item header__list-item--catalog">
-        <a>Каталог товаров</a>
-      </li>
-      <li class="header__list-item header__list-item--order">
-        <a href="form.html">Вязание на заказ</a>
-      </li>
-      <li class="header__list-item header__list-item--search">
-        <a href="#">Поиск по сайту</a>
-        <svg class="header__icon-search" width="18px" height="18px">
-          <use xlink:href="#icon-search"></use>
-        </svg>
-      </li>
-      <li class="header__list-item header__list-item--basket">
-        <a href="#">Корзина: <span>пока пуста</span></a>
-        <svg class="header__icon-basket" width="21px" height="19px">
-          <use xlink:href="#icon-basket"></use>
-        </svg>
-      </li>
-      <li class="header__list-item header__list-item--new">
-        <a href="#">Новые поступления</a>
-      </li>
-      <li class="header__list-item header__list-item--sale">
-        <a href="#">Распродажа</a>
-      </li>
-      <li class="header__list-item header__list-item--delivery">
-        <a href="#">Бесплатная доставка по России</a>
-      </li>
-    </ul>
+    <div class="center-wrapper">
+      <button class="header__button header__button--close"></button>
+      <span class="header__separator"></span>
+      <ul class="header__list">
+        <li class="header__list-item header__list-item--logo">
+          <a class="header__logo" href="index.html">Mishka</a>
+        </li>
+        <li class="header__list-item header__list-item--catalog">
+          <a>Каталог товаров</a>
+        </li>
+        <li class="header__list-item header__list-item--order">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="header__list-item header__list-item--search">
+          <a href="#">Поиск по сайту</a>
+          <svg class="header__icon-search" width="18px" height="18px">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </li>
+        <li class="header__list-item header__list-item--basket">
+          <a href="#">Корзина: <span>пока пуста</span></a>
+          <svg class="header__icon-basket" width="21px" height="19px">
+            <use xlink:href="#icon-basket"></use>
+          </svg>
+        </li>
+        <li class="header__list-item header__list-item--new">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="header__list-item header__list-item--sale">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="header__list-item header__list-item--delivery">
+          <span>Бесплатная доставка по России</span>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="container">
@@ -122,113 +124,119 @@
       <h2 class="main-header__title">Каталог товаров</h2>
     </section>
     <section class="catalog">
-      <h2 class="catalog__title visually-hidden">Перечень товаров</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <div class="catalog__item-picture catalog__item-picture--hare"></div>
-          <div class="catalog__item-wrapper">
-            <a href=#>
-              <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="catalog__item-description">
-              Рост 30 см, вес 200 г
-            </p>
-            <div class="price-wrapper">
-              <p class="catalog__item-price">1 200 руб.</p>
-              <svg class="catalog__item-basket" width="21px" height="19px">
-                <use xlink:href="#icon-basket"></use>
-              </svg>
+      <div class="center-wrapper">
+        <h2 class="catalog__title visually-hidden">Перечень товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="catalog__item-picture catalog__item-picture--hare"></div>
+            <div class="catalog__item-wrapper">
+              <a href=#>
+                <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="catalog__item-description">
+                Рост 30 см, вес 200 г
+              </p>
+              <div class="price-wrapper">
+                <p class="catalog__item-price">1 200 руб.</p>
+                <svg class="catalog__item-basket" width="21px" height="19px">
+                  <use xlink:href="#icon-basket"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <div class="catalog__item-picture catalog__item-picture--bowl"></div>
-          <div class="catalog__item-wrapper">
-            <a href="#">
-              <h3 class="catalog__item-title">Корзинка для белья</h3>
-            </a>
-            <p class="catalog__item-description">
-              Диаметр 15 см, высота 10 см
-            </p>
-            <div class="price-wrapper">
-              <p class="catalog__item-price">690 руб.</p>
-              <svg class="catalog__item-basket" width="21px" height="19px">
-                <use xlink:href="#icon-basket"></use>
-              </svg>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__item-picture catalog__item-picture--bowl"></div>
+            <div class="catalog__item-wrapper">
+              <a href="#">
+                <h3 class="catalog__item-title">Корзинка для белья</h3>
+              </a>
+              <p class="catalog__item-description">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <div class="price-wrapper">
+                <p class="catalog__item-price">690 руб.</p>
+                <svg class="catalog__item-basket" width="21px" height="19px">
+                  <use xlink:href="#icon-basket"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <div class="catalog__item-picture catalog__item-picture--toys"></div>
-          <div class="catalog__item-wrapper">
-            <a href="#">
-              <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="catalog__item-description">
-              Диаметр 30 см, высота 30 см
-            </p>
-            <div class="price-wrapper">
-              <p class="catalog__item-price">1 500 руб.</p>
-              <svg class="catalog__item-basket" width="21px" height="19px">
-                <use xlink:href="#icon-basket"></use>
-              </svg>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__item-picture catalog__item-picture--toys"></div>
+            <div class="catalog__item-wrapper">
+              <a href="#">
+                <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="catalog__item-description">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <div class="price-wrapper">
+                <p class="catalog__item-price">1 500 руб.</p>
+                <svg class="catalog__item-basket" width="21px" height="19px">
+                  <use xlink:href="#icon-basket"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="video">
-      <div class="video__wrap">
-        <div class="video__desktop-player"></div>
-        <div class="video__wrapper">
-          <video class="video__player" src="#"></video>
-          <h2 class="video__title">Процесс производства</h2>
-          <a class="icon-play" href="#"></a>
-          <p class="video__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a class="button video__button" href="#">Сделать заказ</a>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
+    <div class="center-wrapper">
+      <section class="video">
+        <div class="video__wrap">
+          <div class="video__desktop-player"></div>
+          <div class="video__wrapper">
+            <video class="video__player" src="#"></video>
+            <h2 class="video__title">Процесс производства</h2>
+            <a class="icon-play" href="#"></a>
+            <p class="video__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a class="button video__button" href="#">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <svg width="101.615px" height="34.056px">
-        <use xlink:href="#logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="social">
-      <li>
-        <a class="social__item social__item--insta" href="#" aria-label="Мы в инстаграмме">
-          <svg class="social__icon social__icon--insta" width="21.769px" height="21.334px">
-            <use xlink:href="#icon-insta"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social__item social__item--fb" href="#" aria-label="Мы в фейсбуке">
-          <svg class="social__icon social__icon--fb" width="14.962px" height="27.718px">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="social__item social__item--twitter" href="#" aria-label="Мы в твиттере">
-          <svg class="social__icon social__icon--twitter" width="23.494px" height="20.168px">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
+    <div class="page-footer__wrapper center-wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <svg width="101.615px" height="34.056px">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
       </a>
-      <svg class="page-footer__logo-htmlacademy" width="26.943px" height="34.09px">
-        <use xlink:href="#logo-htmlacademy"></use>
-      </svg>
+      <ul class="social">
+        <li>
+          <a class="social__item social__item--insta" href="#" aria-label="Мы в инстаграмме">
+            <svg class="social__icon social__icon--insta" width="21.769px" height="21.334px">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--fb" href="#" aria-label="Мы в фейсбуке">
+            <svg class="social__icon social__icon--fb" width="14.962px" height="27.718px">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__item social__item--twitter" href="#" aria-label="Мы в твиттере">
+            <svg class="social__icon social__icon--twitter" width="23.494px" height="20.168px">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+        </a>
+        <svg class="page-footer__logo-htmlacademy" width="26.943px" height="34.09px">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
+      </div>
     </div>
   </footer>
 
