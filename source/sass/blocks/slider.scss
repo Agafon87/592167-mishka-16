@@ -16,6 +16,15 @@
   background-repeat: no-repeat;
   background-position: 48% 50%;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__next {

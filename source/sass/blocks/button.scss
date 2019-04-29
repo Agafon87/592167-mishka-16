@@ -15,4 +15,14 @@
 
   border: 2px solid $button-border-color;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: $button-border-color;
+    color: $color-white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

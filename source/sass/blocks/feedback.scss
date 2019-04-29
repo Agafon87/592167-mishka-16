@@ -58,8 +58,8 @@
 
 @media (min-width: $width-tablet) {
   .feedback {
-    margin-left: 6.5%;
-    margin-right: 6.5%;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 115px;
   }
 
@@ -91,6 +91,7 @@
   .feedback__text {
     margin-bottom: 55px;
     font-size: 17px;
+    width: 100%;
   }
 
   .feedback__author-name {
@@ -109,7 +110,8 @@
 
 @media (min-width: $width-desktop) {
   .feedback {
-    margin-left: 225px;
+    margin-left: 175px;
+    margin-right: 25px;
     margin-bottom: 160px;
   }
 
@@ -125,6 +127,7 @@
 
   .feedback__text {
     margin-bottom: 40px;
+    width: 775px;
   }
 
   .feedback-slider__buttons {

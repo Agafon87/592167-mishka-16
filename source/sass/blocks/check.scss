@@ -9,33 +9,27 @@
     height: 40px;
 
     background-color: $color-white;
-    border: 2px solid $color-black;
+    border: 2px solid $button-border-color;
     box-sizing: border-box;
 
     content: "";
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $color-lime;
+    outline: 1;
+  }
+
+  &:active::before {
+    border: 2px solid $button-border-color;
+    opacity: 0.3;
   }
 }
 
 .check__element--circle {
   &::before {
     border-radius: 50%;
-  }
-}
-
-.check__element--circle-checked {
-  &::after {
-    position: absolute;
-    top: 7px;
-    left: 13px;
-
-    display: block;
-    width: 15px;
-    height: 15px;
-
-    background-color: $color-lime;
-    border-radius: 50%;
-
-    content: "";
   }
 }
 
@@ -57,6 +51,37 @@
   }
 }
 
+.order-fieldset__sort-type:checked ~ label::after {
+  position: absolute;
+  top: 7px;
+  left: 13px;
+
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  background-color: $color-lime;
+  border-radius: 50%;
+
+  content: "";
+}
+
+.order-fieldset__sort-color:checked ~ label::after {
+  position: absolute;
+  top: 0;
+  left: 4px;
+
+  display: block;
+  width: 32px;
+  height: 22px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  content: "";
+}
+
 
 @media (min-width: $width-tablet) {
   .check__element::before {
@@ -65,10 +90,16 @@
     height: 52px;
   }
 
-  .check__element--circle-checked::after {
-    top: 0;
+  .order-fieldset__sort-type:checked ~ label::after {
+    top: 50%;
     left: 16px;
     width: 20px;
     height: 20px;
+    margin-top: -10px;
+  }
+
+  .order-fieldset__sort-color:checked ~ label::after {
+    top: 0;
+    left: 10px;
   }
 }

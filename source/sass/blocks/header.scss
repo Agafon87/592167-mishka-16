@@ -38,36 +38,35 @@ $second-line-header-padding-top: 20px;
     display: none;
   }
 
-  &--search::before {
+  .header__icon-search,
+  .header__icon-basket {
     position: absolute;
-    top: 32px;
-    left: 32px;
 
-    width: 18px;
-    height: 18px;
-
-    background-image: url("../../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    content: "";
+    fill: rgb(35, 31, 32);
     opacity: 0.2;
   }
 
-  &--basket::before {
-    position: absolute;
-    top: 30px;
+  .header__icon-search {
+    top: 50%;
+    margin-top: -9px;
+    left: 32px;
+  }
+
+  .header__icon-basket {
+    top: 50%;
+    margin-top: -9.5px;
     left: 30px;
+  }
 
-    width: 21px;
-    height: 18px;
+  .header__icon-search:hover,
+  .header__icon-basket:hover {
+    fill: rgb(99, 209, 187);
+    opacity: 1;
+  }
 
-    background-image: url("../../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    content: "";
-    opacity: 0.2;
+  .header__icon-search:active,
+  .header__icon-basket:active {
+    opacity: 0.3;
   }
 }
 
@@ -138,10 +137,10 @@ $second-line-header-padding-top: 20px;
       border-left: none;
       font-size: 0;
 
-      &::before {
-        top: 37px;
-        left: 33px;
-      }
+      // &::before {
+      //   top: 37px;
+      //   left: 33px;
+      // }
     }
 
     &--basket {
@@ -152,10 +151,10 @@ $second-line-header-padding-top: 20px;
       font-size: 17px;
 
 
-      &::before {
-        top: 35px;
-        left: 32px;
-      }
+      // &::before {
+      //   top: 35px;
+      //   left: 32px;
+      // }
     }
 
     &--catalog {
@@ -200,6 +199,10 @@ $second-line-header-padding-top: 20px;
 }
 
 @media (min-width: $width-desktop) {
+  .header {
+    @include block-center;
+  }
+
   .header__list {
     min-width: 1050px;
   }
@@ -272,6 +275,14 @@ $second-line-header-padding-top: 20px;
       font-weight: normal;
       padding-top: $second-line-header-padding-top;
     }
+  }
+
+  .header__list-item a:hover {
+    opacity: 0.6;
+  }
+
+  .header__list-item a:active {
+    opacity: 0.3;
   }
 
   .header__logo {

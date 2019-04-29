@@ -2,12 +2,13 @@
 @import "../mixins";
 
 .page-footer {
-  @include block-center;
+  background-color: $color-light-grey;
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-
-  background-color: $color-light-grey;
 }
 
 .page-footer__logo {
@@ -24,7 +25,7 @@
   border-top: 1px solid $footer-separator-color;
 }
 
-.page-footer__copyright p {
+.page-footer__copyright-text {
   @include clear;
   padding-top: 30px;
   padding-bottom: 35px;
@@ -33,47 +34,63 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  color: $color-black;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__copyright svg {
+.page-footer__logo-htmlacademy {
   position: absolute;
   top: 23px;
   right: 39px;
+  fill: $color-lime;
+}
+
+.page-footer__copyright-text:hover ~ .page-footer__logo-htmlacademy,
+.page-footer__copyright-text:focus ~ .page-footer__logo-htmlacademy {
+  fill: $color-lime-darker;
+}
+
+.page-footer__copyright-text:active ~ .page-footer__logo-htmlacademy {
+  opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {
-  .page-footer {
+  .page-footer__wrapper {
     @include clear;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .page-footer__logo {
-    @include clear;
     padding-top: 55px;
     padding-bottom: 55px;
     display: block;
-    width: 102px;
-    min-height: 34px;
 
-    background-image: url("../../img/logo-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 0 50%;
+    &:hover,
+    &:focus {
+      fill: $color-lime;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
+
 
   .page-footer__copyright {
     padding-right: 25px;
     border-top: none;
   }
 
-  .page-footer__copyright p {
+  .page-footer__copyright-text {
     @include clear;
   }
 
-  .page-footer__copyright svg {
+  .page-footer__logo-htmlacademy {
     top: -3px;
     right: -30px;
   }
