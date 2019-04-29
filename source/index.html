@@ -302,12 +302,23 @@
       <p class="modal-basket__text">
         Выберите размер:
       </p>
-      <div class="modal-basket__size size">
-        <button class="size__button" type="button">s</button>
-        <button class="size__button" type="button">m</button>
-        <button class="size__button" type="button">l</button>
-      </div>
-      <button class="modal-basket__add" type="button">Добавить</button>
+      <ul class="size-wrapper">
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s" aria-label="Размер s"></input>
+          <label class="modal-basket__size-label" for="modal-size-s">s</label>
+        </li>
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m" aria-label="Размер m"></input>
+          <label class="modal-basket__size-label" for="modal-size-m">m</label>
+        </li>
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l" aria-label="Размер l"></input>
+          <label class="modal-basket__size-label" for="modal-size-l">l</label>
+        </li>
+      </ul>
+      <!-- <div class="size-wrapper">
+      </div> -->
+      <a class="button modal-basket__button"  href="#">Добавить</a>
     </div>
   </section>
 

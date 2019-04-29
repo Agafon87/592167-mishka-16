@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 $modal-border-color: rgb(198, 198, 198);
 
@@ -6,7 +7,6 @@ $modal-border-color: rgb(198, 198, 198);
   position: absolute;
   top: 0;
   width: 320px;
-  border: 1px solid $modal-border-color;
   box-sizing: border-box;
   z-index: 2;
 }
@@ -14,11 +14,98 @@ $modal-border-color: rgb(198, 198, 198);
 .modal-baskte__overlay {
   width: 320px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .modal-basket__main {
+  padding-left: 30px;
+  padding-right: 30px;
   position: absolute;
   width: 320px;
   background-color: $color-white;
+  border: 1px solid $modal-border-color;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.modal-basket__title {
+  @include block-center;
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  width: 150px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-basket__text {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.size-wrapper {
+  @include clear-list;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.modal-basket__button {
+  background-color: $color-lime;
+  color: $color-white;
+  border: none;
+  margin-bottom: 45px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.modal-basket__size-label {
+  padding: 15px 33px 15px 33px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.modal-basket__size:checked ~ .modal-basket__size-label {
+  border-color: $color-lime;
+}
+
+@media (min-width: $width-tablet) {
+  .modal-basket__main {
+    padding-left: 105px;
+    padding-right: 105px;
+    width: 566px;
+  }
+
+  .modal-basket__title {
+    margin-top: 35px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-basket__text {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .size-wrapper {
+    margin-bottom: 45px;
+  }
+
+  .modal-basket__size-label {
+    padding: 12px 49px 13px 49px;
+  }
 }

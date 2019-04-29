@@ -77,6 +77,9 @@
 .price-wrapper {
   position: relative;
   border-top: 1px solid $color-light-grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .catalog__item-price {
@@ -88,9 +91,9 @@
 }
 
 .catalog__item-basket {
-  position: absolute;
-  top: 21px;
-  right: -2px;
+  // position: absolute;
+  // top: 21px;
+  // right: -2px;
 
   // display: block;
   // width: 20px;
