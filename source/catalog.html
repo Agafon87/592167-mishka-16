@@ -192,7 +192,7 @@
             <p class="video__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
-            <a class="button video__button" href="#">Сделать заказ</a>
+            <a class="video__button button button-order" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -240,19 +240,32 @@
     </div>
   </footer>
 
-  <section class="modal-basket">
-    <h2 class="modal-basket__title">Добавить в корзину</h2>
-    <p class="modal-basket__text">
-      Выберите размер:
-    </p>
-    <div class="modal-basket__size size">
-      <button class="size__button" type="button">s</button>
-      <button class="size__button" type="button">m</button>
-      <button class="size__button" type="button">l</button>
+  <section class="modal-basket invisible-block">
+    <div class="modal-baskte__overlay"></div>
+    <div class="modal-basket__main">
+      <h2 class="modal-basket__title">Добавить в корзину</h2>
+      <p class="modal-basket__text">
+        Выберите размер:
+      </p>
+      <ul class="size-wrapper">
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s" aria-label="Размер s"></input>
+          <label class="modal-basket__size-label" for="modal-size-s">s</label>
+        </li>
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m" aria-label="Размер m"></input>
+          <label class="modal-basket__size-label" for="modal-size-m">m</label>
+        </li>
+        <li>
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l" aria-label="Размер l"></input>
+          <label class="modal-basket__size-label" for="modal-size-l">l</label>
+        </li>
+      </ul>
+      <a class="button modal-basket__button"  href="#">Добавить</a>
     </div>
-    <button class="modal-basket__add" type="button">Добавить</button>
   </section>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

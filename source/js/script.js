@@ -1,10 +1,10 @@
 const modalBasket = document.querySelector(`.modal-basket`);
-const featuredButton = document.querySelector(`.featured__button`);
+const orderButton = document.querySelector(`.button-order`);
 const addButton = document.querySelector(`.modal-basket__button`);
 const modalOverlay = document.querySelector(`.modal-baskte__overlay`);
 const modalMain = document.querySelector(`.modal-basket__main`);
 
-featuredButton.addEventListener(`click`, (evt) => {
+orderButton.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   modalBasket.classList.remove("invisible-block");
   modalBasket.style.width = document.documentElement.scrollWidth + `px`;
