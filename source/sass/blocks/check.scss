@@ -91,10 +91,11 @@
   }
 
   .order-fieldset__sort-type:checked ~ label::after {
-    top: 0;
+    top: 50%;
     left: 16px;
     width: 20px;
     height: 20px;
+    margin-top: -10px;
   }
 
   .order-fieldset__sort-color:checked ~ label::after {
