@@ -136,11 +136,6 @@ $second-line-header-padding-top: 20px;
       border-right: 1px solid $border-color;
       border-left: none;
       font-size: 0;
-
-      // &::before {
-      //   top: 37px;
-      //   left: 33px;
-      // }
     }
 
     &--basket {
@@ -149,12 +144,6 @@ $second-line-header-padding-top: 20px;
       padding-left: 82px;
 
       font-size: 17px;
-
-
-      // &::before {
-      //   top: 35px;
-      //   left: 32px;
-      // }
     }
 
     &--catalog {

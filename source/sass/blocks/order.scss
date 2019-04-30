@@ -215,7 +215,6 @@
   }
 
   .order__discription {
-    // @include padding-order;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 5px;
@@ -227,7 +226,6 @@
   }
 
   .order-fieldset {
-    // @include padding-order;
     flex-direction: row;
     align-items: baseline;
     padding-bottom: 20px;
@@ -237,7 +235,6 @@
     }
 
     &--good-colors {
-      // background-color: $color-light-grey;
       margin-bottom: 50px;
     }
 
@@ -247,7 +244,6 @@
 
     &--person-contacts {
       flex-direction: column;
-      // background-color: $color-light-grey;
       padding-top: 40px;
       padding-bottom: 30px;
     }
@@ -325,7 +321,6 @@
   }
 
   .order__footer {
-    // @include padding-order;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -351,12 +346,15 @@
   }
 
   .order__another-info {
-    // width: 100%;
     font-size: 19px;
   }
 }
 
 @media (min-width: $width-desktop) {
+  .order {
+    margin-bottom: 45px;
+  }
+
   .order__discription {
     padding-left: 175px;
     padding-right: 175px;

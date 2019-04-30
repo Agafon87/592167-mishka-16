@@ -164,8 +164,14 @@
                 <td class="featured__cell-right">15 см</td>
               </tr>
             </table>
-            <div class="featured-wrapper__mobile-picture">
-            </div>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="featured-wrapper__mobile-picture" src="img/triple-set-mobile@1x.jpg"
+                srcset="img/triple-set-mobile@2x.jpg 2x" alt="Изображение вязанных корзинок">
+            </picture>
             <p class="featured__price">
               Цена: 990 руб.
             </p>
@@ -224,7 +230,7 @@
           </div>
         </div>
         <a class="button feedback__button" href="#">Написать</a>
-        <img class="feedback__picture" src="img/review@1x.jpg" alt="Вязанный коврик">
+        <img class="feedback__picture" src="img/review@1x.jpg" srcset="img/review@2x.jpg 2x" alt="Вязанный коврик">
       </section>
     </div>
 
@@ -245,7 +251,12 @@
               <p>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
             </div>
           </div>
-          <div class="contacts__map"></div>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+              alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          </picture>
           <a class="button contacts__button" href="#">
             Напишите нам
           </a>
@@ -304,19 +315,22 @@
       </p>
       <ul class="size-wrapper">
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s" aria-label="Размер s">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s"
+            aria-label="Размер s">
           <label class="modal-basket__size-label" for="modal-size-s">s</label>
         </li>
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m" aria-label="Размер m">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m"
+            aria-label="Размер m">
           <label class="modal-basket__size-label" for="modal-size-m">m</label>
         </li>
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l" aria-label="Размер l">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l"
+            aria-label="Размер l">
           <label class="modal-basket__size-label" for="modal-size-l">l</label>
         </li>
       </ul>
-      <a class="button modal-basket__button"  href="#">Добавить</a>
+      <a class="button modal-basket__button" href="#">Добавить</a>
     </div>
   </section>
 
