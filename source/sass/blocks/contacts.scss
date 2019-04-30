@@ -75,13 +75,7 @@ $margin-tablet: 6.5%;
 
 .contacts__map {
   height: 457px;
-  margin-bottom: 40px;
-
-  background-image: url("../../img/map-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: rgb(255, 248, 220);
-  background-size: cover;
+  margin-bottom: 35px;
 }
 
 .contacts__button {
@@ -141,11 +135,10 @@ $margin-tablet: 6.5%;
   }
 
   .contacts__map {
-    margin-bottom: 45px;
+    width: 768px;
+    margin-bottom: 50px;
     margin-left: -50px;
     margin-right: -50px;
-    height: 467px;
-    background-image: url("../../img/map-tablet@1x.jpg");
   }
 
   .contacts__button {
@@ -155,11 +148,10 @@ $margin-tablet: 6.5%;
 
 @media (min-width: $width-desktop) {
   .contacts {
-    // margin-left: 225px;
     margin-left: 0;
     margin-top: 140px;
     padding-bottom: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   .contacts__wrap {
@@ -191,8 +183,7 @@ $margin-tablet: 6.5%;
     left: 400px;
 
     width: 525px;
-
-    background-image: url("../../img/map-desktop@1x.jpg");
+    height: 457px;
   }
 
   .contacts__email {

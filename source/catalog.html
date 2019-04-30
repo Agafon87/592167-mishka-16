@@ -128,7 +128,14 @@
         <h2 class="catalog__title visually-hidden">Перечень товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <div class="catalog__item-picture catalog__item-picture--hare"></div>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-hare-mobile@1x.jpg"
+                srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Изображение игрушки Зайчик-попрыгайчик">
+            </picture>
             <div class="catalog__item-wrapper">
               <a href=#>
                 <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
@@ -145,7 +152,14 @@
             </div>
           </li>
           <li class="catalog__item">
-            <div class="catalog__item-picture catalog__item-picture--bowl"></div>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-bowl-mobile@1x.jpg"
+                srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Изображение корзинки для белья">
+            </picture>
             <div class="catalog__item-wrapper">
               <a href="#">
                 <h3 class="catalog__item-title">Корзинка для белья</h3>
@@ -162,7 +176,14 @@
             </div>
           </li>
           <li class="catalog__item">
-            <div class="catalog__item-picture catalog__item-picture--toys"></div>
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="catalog__item-picture" src="img/photo-toys-mobile@1x.jpg"
+                srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Изображение большой корзинки для игрушек">
+            </picture>
             <div class="catalog__item-wrapper">
               <a href="#">
                 <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
@@ -186,7 +207,12 @@
         <div class="video__wrap">
           <div class="video__desktop-player"></div>
           <div class="video__wrapper">
-            <video class="video__player" src="#"></video>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__player" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
+                alt="Изображение видео проигрывателя">
+            </picture>
             <h2 class="video__title">Процесс производства</h2>
             <a class="icon-play" href="#"></a>
             <p class="video__description">
@@ -249,19 +275,22 @@
       </p>
       <ul class="size-wrapper">
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s" aria-label="Размер s">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-s" id="modal-size-s"
+            aria-label="Размер s">
           <label class="modal-basket__size-label" for="modal-size-s">s</label>
         </li>
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m" aria-label="Размер m">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-m" id="modal-size-m"
+            aria-label="Размер m">
           <label class="modal-basket__size-label" for="modal-size-m">m</label>
         </li>
         <li>
-          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l" aria-label="Размер l">
+          <input class="modal-basket__size visually-hidden" type="checkbox" name="size-l" id="modal-size-l"
+            aria-label="Размер l">
           <label class="modal-basket__size-label" for="modal-size-l">l</label>
         </li>
       </ul>
-      <a class="button modal-basket__button"  href="#">Добавить</a>
+      <a class="button modal-basket__button" href="#">Добавить</a>
     </div>
   </section>
 
