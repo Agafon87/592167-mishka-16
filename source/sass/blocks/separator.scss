@@ -1,4 +1,29 @@
+@import "../variables";
+
 .separator {
-  background-image: url("../../img/bg-zigzag-line.svg");
-  height: 23px;
+  width: 100%;
+  display: block;
+}
+
+.separator-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .separator {
+    height: 17px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .separator {
+    height: 23px;
+  }
+
+  .separator-wrapper {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
