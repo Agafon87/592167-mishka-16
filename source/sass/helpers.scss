@@ -12,4 +12,18 @@
   @media (min-width: $width-desktop) {
     width: 1050px;
   }
+
+  &--mobile {
+    @media (min-width: $width-desktop) {
+      width: auto;
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: $width-desktop - 1) {
+      width: 100%;
+    }
+  }
 }
