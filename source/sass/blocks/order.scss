@@ -204,6 +204,7 @@
 }
 
 
+
 @media (min-width: $width-tablet) {
   .order {
     @include clear;
@@ -385,5 +386,11 @@
 
   .order-fieldset__fields-wrapper {
     width: 875px;
+  }
+
+  .order__error,
+  .order__error:hover,
+  .order__error:focus {
+    border-bottom-color: red;
   }
 }

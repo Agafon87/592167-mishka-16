@@ -1,3 +1,4 @@
+// Переменные
 const modalBasket = document.querySelector(`.modal-basket`);
 const orderButtons = document.querySelectorAll(`.button-order`);
 const addButton = document.querySelector(`.modal-basket__button`);
@@ -5,6 +6,23 @@ const modalOverlay = document.querySelector(`.modal-baskte__overlay`);
 const modalMain = document.querySelector(`.modal-basket__main`);
 const mobileMenuButton = document.querySelector(`.header__button`);
 const menuListElements = document.querySelectorAll(`.header__list-item:not(:first-child)`);
+const orderSubmit = document.querySelector(`.order__button`);
+const personName = document.querySelector(`#person-name`);
+const personSname = document.querySelector(`#person-sname`);
+const personPhone = document.querySelector(`#person-phone`);
+const personEmail = document.querySelector(`#person-email`);
+
+// Функции
+const isValid = (elements) => {
+  for (const i of elements) {
+    if (!i.validity.valid) {
+      i.classList.add(`order__error`);
+    } else {
+      i.classList.remove(`order__error`);
+    }
+  }
+}
+
 
 for (const button of orderButtons) {
   button.addEventListener(`click`, function (evt) {
@@ -54,4 +72,8 @@ if (document.documentElement.clientWidth < 768) {
   });
 }
 
-
+if (orderSubmit) {
+  orderSubmit.addEventListener(`click`, () => {
+    isValid([personName, personSname, personPhone, personEmail]);
+  })
+}
