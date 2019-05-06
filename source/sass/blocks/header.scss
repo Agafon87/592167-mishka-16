@@ -70,6 +70,11 @@ $second-line-header-padding-top: 20px;
   }
 }
 
+
+.header__button {
+  z-index: 2;
+}
+
 .header__button--close {
   position: absolute;
   top: 29px;
@@ -78,6 +83,17 @@ $second-line-header-padding-top: 20px;
   width: 21px;
   height: 20px;
   background: url("../../img/icon-menu-close.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.header__button--open {
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  border: none;
+  width: 20px;
+  height: 14px;
+  background: url("../../img/icon-menu-open.svg") center center no-repeat;
   background-size: contain;
 }
 
