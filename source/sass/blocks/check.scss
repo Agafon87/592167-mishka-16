@@ -103,3 +103,10 @@
     left: 10px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .order-fieldset__sort-type:focus ~ label::before,
+  .order-fieldset__sort-color:focus ~ label::before {
+    box-shadow: 0 0 5px 0 rgb(38, 139, 179);
+  }
+}

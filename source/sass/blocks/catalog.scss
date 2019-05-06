@@ -1,6 +1,8 @@
 @import "../mixins";
 @import "../variables";
 
+$img-background: rgb(235, 235, 235);
+
 .catalog {
   margin-left: 30px;
   margin-right: 30px;
@@ -22,6 +24,9 @@
 
 .catalog__item-picture {
   display: block;
+  width: 260px;
+  height: 195px;
+  background-color: $img-background;
 }
 
 .catalog__item-wrapper {
@@ -130,6 +135,11 @@
   .catalog__item-basket {
     padding-right: 5px;
   }
+
+  .catalog__item-picture {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -180,5 +190,10 @@
 
   .catalog__item-price {
     margin-left: 0;
+  }
+
+  .catalog__item-picture {
+    width: 316px;
+    height: 462px;
   }
 }
