@@ -28,6 +28,14 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .video__title {
