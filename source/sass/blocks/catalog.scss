@@ -44,6 +44,10 @@ $img-background: rgb(235, 235, 235);
   }
 }
 
+.catalog__item-wrapper a {
+  color: $color-black;
+}
+
 .catalog__item-title {
   margin: 0;
   margin-top: 28px;
@@ -175,7 +179,6 @@ $img-background: rgb(235, 235, 235);
   }
 
   .catalog__item-wrapper a {
-    color: $color-black;
     cursor: pointer;
 
     &:hover,
