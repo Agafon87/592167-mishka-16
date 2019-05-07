@@ -27,7 +27,7 @@ const isValid = (elements) => {
 for (const button of orderButtons) {
   button.addEventListener(`click`, function (evt) {
     evt.preventDefault();
-    modalBasket.classList.remove("invisible-block");
+    modalBasket.classList.remove(`invisible-block`);
     modalBasket.style.width = document.documentElement.scrollWidth + `px`;
     modalOverlay.style.width = document.documentElement.scrollWidth + `px`;
     modalOverlay.style.height = document.documentElement.scrollHeight + `px`;
@@ -45,7 +45,7 @@ for (const button of orderButtons) {
 if (addButton) {
   addButton.addEventListener(`click`, (evt) => {
     evt.preventDefault();
-    modalBasket.classList.add("invisible-block");
+    modalBasket.classList.add(`invisible-block`);
   });
 }
 
