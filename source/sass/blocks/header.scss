@@ -59,13 +59,13 @@ $second-line-header-padding-top: 20px;
   }
 
   .header__icon-search:hover,
-  .header__icon-basket:hover {
+  .header__link--basket:hover ~ .header__icon-basket {
     fill: rgb(99, 209, 187);
     opacity: 1;
   }
 
   .header__icon-search:active,
-  .header__icon-basket:active {
+  .header__link--basket:active ~ .header__icon-basket {
     opacity: 0.3;
   }
 }
