@@ -114,6 +114,7 @@
   .video {
     margin-right: 0;
     margin-left: 0;
+    width: 100%;
   }
 
   .video__wrap {
@@ -163,7 +164,7 @@
 
 @media (min-width: $width-desktop) {
   .video {
-    margin-bottom: 105px;
+    margin-bottom: 100px;
   }
 
   .video__wrap {
