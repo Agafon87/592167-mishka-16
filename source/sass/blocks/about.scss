@@ -1,10 +1,13 @@
 @import "../variables";
 @import "../mixins";
 
+$width-mobile: 320px;
+
 .about {
-  margin-left: 9.4%;
-  margin-right: 9.4%;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 55px;
+  width: 260px;
 }
 
 .about__title {
@@ -165,11 +168,20 @@
   }
 }
 
+@media (min-width: $width-mobile) {
+  .about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .about {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 160px;
+    width: 100%;
   }
 
   .about__list {
