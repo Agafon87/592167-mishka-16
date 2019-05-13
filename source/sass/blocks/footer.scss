@@ -48,12 +48,12 @@
   fill: $color-lime;
 }
 
-.page-footer__copyright-text:hover ~ .page-footer__logo-htmlacademy,
-.page-footer__copyright-text:focus ~ .page-footer__logo-htmlacademy {
+.page-footer__copyright-text:hover > .page-footer__logo-htmlacademy,
+.page-footer__copyright-text:focus > .page-footer__logo-htmlacademy {
   fill: $color-lime-darker;
 }
 
-.page-footer__copyright-text:active ~ .page-footer__logo-htmlacademy {
+.page-footer__copyright-text:active > .page-footer__logo-htmlacademy {
   opacity: 0.3;
 }
 
