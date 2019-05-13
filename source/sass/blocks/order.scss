@@ -55,7 +55,7 @@
 }
 
 .order-fieldset--person-info .order-fieldset__title-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .order-fieldset--person-contacts .order-fieldset__title-wrapper {
@@ -88,11 +88,15 @@
 }
 
 .order-fieldset__list-color .order-fieldset__item {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .order-fieldset__list-color .order-fieldset__item:last-child {
   margin-bottom: 0;
+}
+
+.order-fieldset--good-colors .order-fieldset__title-wrapper {
+  margin-bottom: 25px;
 }
 
 .order-fieldset__title {
@@ -232,10 +236,11 @@
 
     &--good-type {
       flex-direction: row;
+      margin-bottom: 50px;
     }
 
     &--good-colors {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     &--person-info {
